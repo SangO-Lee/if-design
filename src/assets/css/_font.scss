@@ -1,0 +1,89 @@
+//font
+@mixin headline1 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.025em;
+}
+@mixin headline2 {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.025em;
+}
+@mixin headline3 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+}
+@mixin headline4 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.025em;
+}
+@mixin headline5 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.025em;
+}
+@mixin headline6 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+}
+
+@mixin title1 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+}
+@mixin title2 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.025em;
+}
+@mixin title3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.025em;
+}
+@mixin title4 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+}
+
+@mixin body1 {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.025em;
+}
+@mixin body2 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.025em;
+}
+@mixin body3 {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.025em;
+}
+@mixin body4 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.025em;
+}
+
+@mixin caption1 {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.025em;
+}
+@mixin caption2 {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.025em;
+}
+@mixin caption3 {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.025em;
+}

@@ -1,0 +1,59 @@
+@import "./layout", "./color", "./font";
+@import "assets/fonts/pretendardvariable.css";
+
+* {
+    font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif !important;
+}
+#body-layout {
+    background: #d0d0d0;
+}
+main {
+    section {
+        position: relative;
+        display: flex;
+        padding: 80px 0;
+        width: 100%;
+        min-height: 100dvh;
+        &:nth-child(odd) {
+            background: #d0d0d0;
+        }
+        &:nth-child(even) {
+            background: #fff;
+        }
+    }
+    #section1 {
+        // padding-bottom: 0;
+    }
+    #section2 {
+        // padding-top: 200px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            // border-bottom: 120px solid #fff;
+            // border-left: 100dvw solid #d0d0d0;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+        @include headline1;
+        font-weight: bold;
+    }
+}
