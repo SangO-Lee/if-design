@@ -1,20 +1,23 @@
 import "assets/css/nav.scss";
 import logoImg from "assets/img/CI_White.png";
-import useScrollDirection from "hook/useScrollDirection";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";
 
 function Nav() {
     const scrollPosition = useScrollPosition();
-    const scrollDirection = useScrollDirection();
     const [isNavActive, setIsNavActive] = useState(false);
+    const [isNavScrolling, setIsNavScrolling] = useState(false);
 
     useEffect(() => {
-        if (scrollPosition === 0) {
-            setIsNavActive(false);
+        if (scrollPosition !== 0) {
+            setIsNavScrolling(true);
         } else {
-            setIsNavActive(true);
+            setIsNavScrolling(false);
         }
+    }, [scrollPosition]);
+
+    useEffect(() => {
+        setIsNavActive(true);
     }, [scrollPosition]);
 
     return (
@@ -22,7 +25,7 @@ function Nav() {
             <nav
                 id="nav"
                 className={`${isNavActive ? "on" : ""} ${
-                    scrollPosition !== 0 ? "scrolling" : ""
+                    isNavScrolling ? "scrolling" : ""
                 }`.trim()}
             >
                 <div className="container">

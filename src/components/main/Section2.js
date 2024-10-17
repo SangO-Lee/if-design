@@ -1,4 +1,4 @@
-function Section1() {
+function Section2() {
     return (
         <>
             <section id="section2">
@@ -10,4 +10,4 @@ function Section1() {
     );
 }
 
-export default Section1;
+export default Section2;
