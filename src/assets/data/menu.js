@@ -16,7 +16,7 @@ const menu = [
     },
     {
         id: "section4",
-        name: "Settings",
+        name: "Communication Log",
         visible: true,
     },
     {
