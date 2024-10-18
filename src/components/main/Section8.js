@@ -1,11 +1,12 @@
-function Section1() {
+import menu from "assets/data/menu";
+function Section8() {
     return (
         <>
-            <section id="section8">
+            <section id={menu[7].id}>
                 <div className="container">8</div>
             </section>
         </>
     );
 }
 
-export default Section1;
+export default Section8;

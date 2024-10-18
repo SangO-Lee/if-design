@@ -1,7 +1,9 @@
-function Section1() {
+import menu from "assets/data/menu";
+
+function Section4() {
     return (
         <>
-            <section id="section4">
+            <section id={menu[3].id}>
                 <div className="container">
                     <h2 className="section-title">Section 4</h2>
                 </div>
@@ -10,4 +12,4 @@ function Section1() {
     );
 }
 
-export default Section1;
+export default Section4;

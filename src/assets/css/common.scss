@@ -17,8 +17,14 @@ html,
 body {
     scroll-behavior: smooth;
 }
+button {
+    cursor: pointer;
+}
 #body-layout {
     background: #d0d0d0;
+}
+.hidden {
+    display: none !important;
 }
 main {
     section {
@@ -60,10 +66,6 @@ main {
                 }
             }
         }
-    }
-
-    .hidden {
-        display: none;
     }
 
     .section-title {

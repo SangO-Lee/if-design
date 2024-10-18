@@ -1,59 +1,13 @@
 import Slider from "components/common/Slider";
 import NewsTicker from "components/common/NewsTicker";
-import logoImg from "assets/img/logo_white.png";
+import SLIDES from "assets/data/slides";
+import PARTNERS from "assets/data/partners";
+import menu from "assets/data/menu";
 
 function Section1() {
-    const SLIDES = [
-        {
-            index: "1",
-            title: "Slide Title",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        },
-        {
-            index: "2",
-            title: "Slide Title",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        },
-        {
-            index: "3",
-            title: "Slide Title",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        },
-        {
-            index: "4",
-            title: "Slide Title",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-        },
-    ];
-    const images = [
-        {
-            src: logoImg,
-            alt: "로고1",
-        },
-        {
-            src: logoImg,
-            alt: "로고2",
-        },
-        {
-            src: logoImg,
-            alt: "로고3",
-        },
-        {
-            src: logoImg,
-            alt: "로고4",
-        },
-        {
-            src: logoImg,
-            alt: "로고5",
-        },
-    ];
     return (
         <>
-            <section id="section1">
+            <section id={menu[0].id}>
                 <div className="container">
                     <dl className="main-quote">
                         <dt>
@@ -77,7 +31,7 @@ function Section1() {
                             Our partners are working faster and more efficiently
                             through <strong>CREVERSE</strong>.
                         </h3>
-                        <NewsTicker images={images} />
+                        <NewsTicker images={PARTNERS} />
                     </div>
                 </div>
             </section>

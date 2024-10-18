@@ -2,11 +2,18 @@ import "assets/css/nav.scss";
 import logoImg from "assets/img/CI_White.png";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";
+import menu from "assets/data/menu";
 
 function Nav() {
     const scrollPosition = useScrollPosition();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
+    const onScrollMenu = (target) => {
+        const targetId = target;
+        const targetOffset =
+            document.querySelector(`#${targetId}`).offsetTop - 50;
+        window.scrollTo(0, targetOffset);
+    };
 
     useEffect(() => {
         if (scrollPosition !== 0) {
@@ -30,21 +37,26 @@ function Nav() {
             >
                 <div className="container">
                     <h1 id="logo">
-                        <img src={logoImg} alt="creverse" />
+                        <a href="/">
+                            <img src={logoImg} alt="creverse" />
+                        </a>
                     </h1>
                     <ul id="menu">
-                        <li>
-                            <a href="#section1">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="#section2">Features</a>
-                        </li>
-                        <li>
-                            <a href="#section3">Key Visual</a>
-                        </li>
-                        <li>
-                            <a href="#section4">FAQ</a>
-                        </li>
+                        {menu.map((menu, index) => (
+                            <li
+                                key={index}
+                                className={!menu.visible ? "hidden" : ""}
+                                style={{ transitionDelay: `${0.1 * index}s` }}
+                            >
+                                <button
+                                    onClick={() => {
+                                        onScrollMenu(menu.id);
+                                    }}
+                                >
+                                    {menu.name}
+                                </button>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </nav>
