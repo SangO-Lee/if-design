@@ -6,23 +6,23 @@ const menu = [
     },
     {
         id: "section2",
-        name: "Features",
+        name: "Mobile App",
         visible: true,
     },
     {
         id: "section3",
-        name: "Key Visual",
+        name: "Features",
         visible: true,
     },
     {
         id: "section4",
-        name: "FAQ",
+        name: "Settings",
         visible: true,
     },
     {
         id: "section5",
-        name: "section5",
-        visible: false,
+        name: "FAQ",
+        visible: true,
     },
     {
         id: "section6",
