@@ -39,9 +39,25 @@ main {
             background: #fff;
         }
     }
+    .section-title {
+        margin-bottom: 80px;
+        @include headline1;
+        font-weight: bold;
+        text-align: center;
+
+        & + .sub-title {
+            margin-top: -60px;
+            margin-bottom: 60px;
+            text-align: center;
+            @include body1;
+            color: $f-gray;
+        }
+    }
+
+    //section1
     #section1 {
         .main-quote {
-            padding: 80px 0 120px;
+            padding: 40px 0 120px;
             text-align: center;
             dt {
                 margin-bottom: 24px;
@@ -68,9 +84,51 @@ main {
         }
     }
 
-    .section-title {
-        margin-bottom: 40px;
-        @include headline1;
-        font-weight: bold;
+    //section2
+    #section2 {
+        padding-top: 40px;
+        .title {
+            z-index: 100;
+            position: sticky;
+            top: 50px;
+            padding: 40px 0 1px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(4px);
+        }
+        .mobile-screens {
+            position: relative;
+            .inner {
+                display: flex;
+                gap: 16px;
+                height: fit-content;
+                > div {
+                    flex: 1;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 16px;
+
+                    &.col-left,
+                    &.col-right {
+                        padding-top: 60px;
+                    }
+                }
+            }
+
+            .screen {
+                border-radius: 12px;
+                background: $bg-light;
+                aspect-ratio: 375 / 812;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+#footer {
+    padding: 12px 0;
+    background: $bg-regular;
+    .copy {
+        @include caption1;
+        color: $f-lightgray;
     }
 }

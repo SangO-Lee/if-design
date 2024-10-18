@@ -11,14 +11,15 @@ function Section1() {
                 <div className="container">
                     <dl className="main-quote">
                         <dt>
-                            CREVERSE 쉽고 스마트하게, <br />
-                            학생 관리의 새로운 기준
+                            CREVERSE – The New Standard in <br />
+                            Easy and Smart Student Management
                         </dt>
                         <dd>
-                            강사님을 위한 맞춤형 학생 관리 앱으로, 출석 체크부터
-                            성적 관리까지 한 곳에서 손쉽게 해결하세요 <br />
-                            수업의 질을 높이고, 시간을 절약하며 학생과의 소통을
-                            더 효율적으로 만들어 드립니다
+                            A tailored student management app for instructors,
+                            simplifying everything from attendance tracking to
+                            grade management in one place. <br />
+                            Improve the quality of your lessons, save time, and
+                            communicate more efficiently with your students.
                         </dd>
                     </dl>
                     <h2 className="section-title hidden">Slide</h2>
