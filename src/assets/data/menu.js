@@ -21,7 +21,7 @@ const menu = [
     },
     {
         id: "section5",
-        name: "FAQ",
+        name: "User Benefits",
         visible: true,
     },
     {

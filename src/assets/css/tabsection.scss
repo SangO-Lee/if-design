@@ -1,0 +1,112 @@
+@import "_font", "_color";
+
+.tab-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    gap: 60px;
+
+    .img-box {
+        flex: 1;
+        position: relative;
+        border-radius: 20px;
+        background: $bg-dark;
+        aspect-ratio: 16/15;
+        overflow: hidden;
+
+        // 이미지 슬라이드 애니메이션
+        .image-slide {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition:
+                transform 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+            opacity: 1;
+        }
+
+        // 슬라이드 애니메이션 (탭 클릭 시 이미지가 페이드인되는 효과)
+        .image-slide-exit {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        .image-slide-enter {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .txt-box {
+        flex: 1;
+
+        // 탭 메뉴 스타일
+        .tabs {
+            position: relative;
+            display: flex;
+            width: fit-content;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            padding: 8px 12px;
+            border-radius: 36px;
+            background: $bg-regular;
+            gap: 8px;
+
+            .tab-button {
+                z-index: 10;
+                position: relative;
+                width: 86px;
+                padding: 8px 16px;
+                border-radius: 10px;
+                @include body2;
+                color: $f-gray;
+                border: none;
+                background: transparent;
+                transition: all 0.3s ease-in-out;
+
+                &.active {
+                    color: #fff;
+                }
+            }
+
+            .active-bg {
+                z-index: 0;
+                position: absolute;
+                left: 12px;
+                top: 8px;
+                width: 86px;
+                height: 36px;
+                border-radius: 36px;
+                background-color: $bg-black;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .section-title,
+        .sub-title {
+            text-align: left;
+        }
+
+        // 리스트 스타일
+        ul {
+            display: flex;
+            flex-flow: column;
+            gap: 12px;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                @include title2;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background: $bg-dark;
+                }
+            }
+        }
+    }
+}
