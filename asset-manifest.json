@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/if-design/static/css/main.4783cf27.css",
+    "main.js": "/if-design/static/js/main.14089082.js",
+    "static/js/453.757a9701.chunk.js": "/if-design/static/js/453.757a9701.chunk.js",
+    "static/media/PretendardVariable.woff2": "/if-design/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
+    "index.html": "/if-design/index.html",
+    "main.4783cf27.css.map": "/if-design/static/css/main.4783cf27.css.map",
+    "main.14089082.js.map": "/if-design/static/js/main.14089082.js.map",
+    "453.757a9701.chunk.js.map": "/if-design/static/js/453.757a9701.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4783cf27.css",
+    "static/js/main.14089082.js"
+  ]
+}
