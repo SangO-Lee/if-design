@@ -167,8 +167,23 @@ main {
 
     //section4
     #section4 {
-        min-height: auto;
+        min-height: 0;
         overflow-x: hidden;
+    }
+
+    //section5
+    #section5 {
+        min-height: 0;
+    }
+
+    //section6
+    #section6 {
+        height: 300vh;
+
+        .container {
+            position: sticky;
+            top: 80px;
+        }
     }
 }
 
