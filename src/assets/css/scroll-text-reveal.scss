@@ -1,0 +1,11 @@
+.scroll-text {
+    .word {
+        opacity: 0.2;
+        filter: blur(2px);
+        transition: all 0.6s ease;
+        &.on {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+}

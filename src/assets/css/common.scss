@@ -252,6 +252,26 @@ main {
             }
         }
     }
+
+    //section7
+    #section7 {
+        height: 400vh;
+        .container {
+            position: sticky;
+            top: 80px;
+            display: flex;
+            height: 80vh;
+            align-items: center;
+        }
+        #scroll-quote {
+            width: 600px;
+            max-width: 100%;
+            .word {
+                @include headline1;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 #footer {
