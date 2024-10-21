@@ -5,7 +5,7 @@ function Section5() {
     return (
         <>
             <section id={menu[4].id}>
-                <div className="container fluid">
+                <div className="container">
                     <TabSection />
                 </div>
             </section>

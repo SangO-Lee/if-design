@@ -65,14 +65,14 @@ const Swiper = ({ cards }) => {
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
                 >
-                    &lt;
+                    <span className="material-icons">chevron_left</span>
                 </button>
                 <button
                     className="nav-button"
                     onClick={handleNext}
                     disabled={currentIndex === cards.length - 1}
                 >
-                    &gt;
+                    <span className="material-icons">chevron_right</span>
                 </button>
             </div>
         </div>

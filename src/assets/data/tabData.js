@@ -1,3 +1,7 @@
+import tabImg1 from "assets/img/tab_sample1.jpg";
+import tabImg2 from "assets/img/tab_sample2.jpg";
+import tabImg3 from "assets/img/tab_sample3.jpg";
+
 const tabData = [
     {
         id: 1,
@@ -5,7 +9,8 @@ const tabData = [
         title: "Empowering Instructors \nFor Effective Teaching",
         description:
             "Our app simplifies classroom management, \nenabling instructors to focus on what truly matters: teaching and inspiring students.",
-        imageUrl: "image1.jpg",
+        imageUrl: tabImg1,
+        imageBg: "#f06262",
         list: [
             "Effortless Attendance Management",
             "Streamlined Assignment Tracking",
@@ -20,7 +25,8 @@ const tabData = [
         title: "Stay Connected and Informed \nAbout Your Child's Education",
         description:
             "Our app keeps parents in the loop, \nmaking it easier to support their children's academic journey.",
-        imageUrl: "image2.jpg",
+        imageUrl: tabImg2,
+        imageBg: "#62b7f0",
         list: [
             "Real-Time Updates",
             "Access to Student Progress",
@@ -35,7 +41,8 @@ const tabData = [
         title: "Unlocking Student Success \nWith Comprehensive Tools",
         description:
             "Our app provides students with all the resources \nthey need to excel academically and stay organized.",
-        imageUrl: "image3.jpg",
+        imageUrl: tabImg3,
+        imageBg: "#f0ae62",
         list: [
             "Personalized Learning Experience",
             "Assignment Reminders",

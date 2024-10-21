@@ -15,11 +15,23 @@ const TabSection = () => {
     return (
         <div className="tab-section">
             <div className="img-box">
-                <img
-                    src={tabData[activeTab].imageUrl}
-                    alt={tabData[activeTab].title}
-                    className="image-slide"
-                />
+                {tabData.map((item, index) => (
+                    // <img
+                    //     key={index}
+                    //     src={item.imageUrl}
+                    //     alt={item.title}
+                    //     className={`image-slide ${
+                    //         activeTab === index ? "active" : ""
+                    //     }`}
+                    // />
+                    <div
+                        key={index}
+                        style={{ background: `${item.imageBg}` }}
+                        className={`image-slide ${
+                            activeTab === index ? "active" : ""
+                        }`}
+                    ></div>
+                ))}
             </div>
 
             <div className="txt-box">

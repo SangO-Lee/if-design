@@ -1,39 +1,43 @@
 @import "_font", "_color";
+@import "material-icons/iconfont/material-icons.scss";
 
 .tab-section {
     display: flex;
     justify-content: space-between;
-    padding: 0 120px;
+    // padding: 0 120px;
     gap: 60px;
 
     .img-box {
         flex: 1;
         position: relative;
         border-radius: 20px;
-        background: $bg-dark;
+        background: $bg-light;
         aspect-ratio: 16/15;
         overflow: hidden;
 
         // 이미지 슬라이드 애니메이션
         .image-slide {
+            position: absolute;
+            left: 0;
+            top: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
-            transition:
-                transform 0.5s ease-in-out,
-                opacity 0.5s ease-in-out;
-            opacity: 1;
-        }
-
-        // 슬라이드 애니메이션 (탭 클릭 시 이미지가 페이드인되는 효과)
-        .image-slide-exit {
+            transition: all 0.6s ease-in-out;
             opacity: 0;
-            transform: translateX(-100%);
-        }
 
-        .image-slide-enter {
-            opacity: 1;
-            transform: translateX(0);
+            &:nth-child(1) {
+                background: #f06262;
+            }
+            &:nth-child(2) {
+                background: #62b7f0;
+            }
+            &:nth-child(3) {
+                background: #f0ae62;
+            }
+            &.active {
+                opacity: 1;
+            }
         }
     }
 
@@ -45,12 +49,11 @@
             position: relative;
             display: flex;
             width: fit-content;
-            margin-top: 40px;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
             padding: 8px 12px;
             border-radius: 36px;
-            background: $bg-regular;
             gap: 8px;
+            background: $bg-regular;
 
             .tab-button {
                 z-index: 10;
@@ -99,12 +102,10 @@
                 @include title2;
 
                 &::before {
-                    content: "";
+                    content: "\e5ca";
                     display: block;
-                    width: 4px;
-                    height: 4px;
                     border-radius: 50%;
-                    background: $bg-dark;
+                    font-family: "Material Icons";
                 }
             }
         }

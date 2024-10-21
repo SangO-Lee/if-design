@@ -8,7 +8,7 @@ function Section4() {
             <section id={menu[3].id}>
                 <div className="container">
                     <h2 className="section-title">
-                        Connect Instantly. Communicate Effectively.
+                        Connect Instantly, Communicate Effectively.
                     </h2>
                     <p className="sub-title">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
