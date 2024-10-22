@@ -17,12 +17,10 @@ function Section7() {
             />
             <section id={menu[6].id} ref={targetRef}>
                 <div className="container">
-                    <div id="scroll-quote">
-                        <ScrollTextReveal
-                            text="Education is not just about grades; it’s about nurturing the potential within every student. Together, we can inspire growth, empower dreams, and shape the leaders of tomorrow. Join us on this journey, and let’s create a brighter future for our children. Together, we can turn aspirations into achievements."
-                            progress={progress}
-                        />
-                    </div>
+                    <ScrollTextReveal
+                        text="Education is not just about grades; it’s about nurturing the potential within every student. Together, we can inspire growth, empower dreams, and shape the leaders of tomorrow. Join us on this journey, and let’s create a brighter future for our children. Together, we can turn aspirations into achievements."
+                        progress={progress}
+                    />
                 </div>
             </section>
         </>

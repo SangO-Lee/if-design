@@ -263,14 +263,6 @@ main {
             height: 80vh;
             align-items: center;
         }
-        #scroll-quote {
-            width: 600px;
-            max-width: 100%;
-            .word {
-                @include headline1;
-                font-weight: bold;
-            }
-        }
     }
 }
 
