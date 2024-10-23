@@ -1,0 +1,40 @@
+@import "_font", "_color";
+
+.count-section {
+    display: flex;
+    gap: 80px;
+    height: fit-content;
+    .counter {
+        position: sticky;
+        top: 140px;
+        margin-bottom: 270px;
+        flex-basis: 130px;
+        font-size: 100px;
+        font-weight: bold;
+        height: 1em;
+        overflow: hidden;
+    }
+    .content-wrap {
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        flex-grow: 1;
+
+        article {
+            min-height: 400px;
+            padding: 80px;
+            background: $bg-light;
+            border-radius: 20px;
+        }
+
+        h2 {
+            @include title1;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        p {
+            @include body1;
+            color: $f-gray;
+        }
+    }
+}
