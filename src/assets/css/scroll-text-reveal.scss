@@ -13,7 +13,7 @@
         min-height: fit-content;
         transition: all 0.8s ease;
         .word {
-            @include headline1;
+            @include heading1;
             font-weight: bold;
             opacity: 0.2;
             filter: blur(2px);

@@ -1,11 +1,16 @@
 * {
     box-sizing: border-box;
 }
-#body-layout {
-    padding-top: 81px;
+img {
+    max-width: 100%;
+    &.center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .container {
-    width: 1240px;
+    width: calc(100dvw - 260px);
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
