@@ -1,4 +1,4 @@
-import "assets/css/counter-section.scss";
+import "assets/css/prototype/counter-section.scss";
 import { useEffect, useRef, useState } from "react";
 import counterCards from "assets/data/counterSection";
 

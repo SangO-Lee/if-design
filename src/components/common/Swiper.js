@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "assets/css/swiper.scss"; // 스타일 파일 분리
+import "assets/css/prototype/swiper.scss"; // 스타일 파일 분리
 
 const Swiper = ({ cards }) => {
     const [currentIndex, setCurrentIndex] = useState(0);

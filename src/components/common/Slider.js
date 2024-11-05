@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "assets/css/slider.scss";
+import "assets/css/prototype/slider.scss";
 
 const Slider = ({ intervalTime = 6000, slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0); // 현재 슬라이드 인덱스

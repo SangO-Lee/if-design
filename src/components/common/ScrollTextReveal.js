@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "assets/css/scroll-text-reveal.scss";
+import "assets/css/prototype/scroll-text-reveal.scss";
 
 const ScrollTextReveal = ({ text, progress }) => {
     const [scrollPosition, setScrollPosition] = useState(0);

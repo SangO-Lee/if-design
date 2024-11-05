@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "assets/css/tabsection.scss";
+import "assets/css/prototype/tabsection.scss";
 import tabData from "assets/data/tabData";
 
 const TabSection = () => {
