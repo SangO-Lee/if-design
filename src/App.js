@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Reset } from "styled-reset";
-
-import MainPrototype from "components/main/MainPrototype";
 import Main from "components/main/Main";
+import MainPrototype from "components/main/MainPrototype";
 
 function App() {
     return (
