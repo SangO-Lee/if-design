@@ -1,4 +1,4 @@
-@import "./_font", "./_color";
+@import "../_font", "../_color";
 
 .swiper-container {
     position: relative;
@@ -26,12 +26,12 @@
             padding: 40px;
             .card-title {
                 margin-bottom: 16px;
-                @include title2;
+                @include heading2;
                 font-weight: 500;
             }
             .card-description {
                 @include body1;
-                color: $f-gray;
+                color: $gray900;
             }
         }
     }

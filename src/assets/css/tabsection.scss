@@ -1,4 +1,4 @@
-@import "./_font", "./_color";
+@import "../_font", "../_color";
 @import "material-icons/iconfont/material-icons.scss";
 
 .tab-section {
@@ -62,7 +62,7 @@
                 padding: 8px 16px;
                 border-radius: 10px;
                 @include body2;
-                color: $f-gray;
+                color: $gray900;
                 border: none;
                 background: transparent;
                 transition: all 0.3s ease-in-out;
@@ -99,7 +99,7 @@
                 display: flex;
                 align-items: center;
                 gap: 12px;
-                @include title2;
+                @include heading2;
 
                 &::before {
                     content: "\e5ca";
