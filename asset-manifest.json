@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/if-design/static/css/main.4515e657.css",
-    "main.js": "/if-design/static/js/main.8035e3a1.js",
+    "main.css": "/if-design/static/css/main.7aeb8a7e.css",
+    "main.js": "/if-design/static/js/main.2acd4ebe.js",
     "static/js/453.757a9701.chunk.js": "/if-design/static/js/453.757a9701.chunk.js",
     "static/media/PretendardVariable.woff2": "/if-design/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
     "static/media/overview.png": "/if-design/static/media/overview.02fa8fe7fd89d19d8b36.png",
@@ -11,6 +11,7 @@
     "static/media/material-icons-two-tone.woff": "/if-design/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/app_package2.png": "/if-design/static/media/app_package2.5326505d567ecbe71569.png",
     "static/media/DMSans-Italic-VariableFont_opsz,wght.ttf": "/if-design/static/media/DMSans-Italic-VariableFont_opsz,wght.3812fdba66bd4e31febd.ttf",
+    "static/media/design_guide_bg.png": "/if-design/static/media/design_guide_bg.38cf5896ee56f0dd051e.png",
     "static/media/DMSans-VariableFont_opsz,wght.ttf": "/if-design/static/media/DMSans-VariableFont_opsz,wght.b230ddb7eabb4b25e123.ttf",
     "static/media/user_flow_bg.png": "/if-design/static/media/user_flow_bg.4e45e3b5c4cc8dc725e4.png",
     "static/media/material-icons-two-tone.woff2": "/if-design/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
@@ -32,21 +33,25 @@
     "static/media/tab_sample1.jpg": "/if-design/static/media/tab_sample1.b72aaa3a31516c10a09b.jpg",
     "static/media/mobile_screen3.png": "/if-design/static/media/mobile_screen3.e039065e8658aa97aee4.png",
     "static/media/mobile_screen1.png": "/if-design/static/media/mobile_screen1.c539a38be838570f604b.png",
+    "static/media/module_system.png": "/if-design/static/media/module_system.f29611885daa27f26acc.png",
     "static/media/tab_sample3.jpg": "/if-design/static/media/tab_sample3.a4298456775cb9b8b895.jpg",
+    "static/media/color_system.png": "/if-design/static/media/color_system.7f6290efcfc09b971061.png",
     "static/media/app_package3.png": "/if-design/static/media/app_package3.ba10ed2c30b0567285e0.png",
     "static/media/tab_sample2.jpg": "/if-design/static/media/tab_sample2.24add37afb85b8bf2c25.jpg",
     "static/media/teacher_app_bg.png": "/if-design/static/media/teacher_app_bg.9330dee49bbb08276986.png",
+    "static/media/graphic_system.png": "/if-design/static/media/graphic_system.b4a4ebdc881d57a1b006.png",
     "static/media/app_package4.png": "/if-design/static/media/app_package4.6ed6a08a3fd5a3fa44fa.png",
     "static/media/color_sample3.png": "/if-design/static/media/color_sample3.9bbc0e9c6457d501706a.png",
     "static/media/color_sample1.png": "/if-design/static/media/color_sample1.3ea600d19c3c1faa15a4.png",
     "static/media/color_sample2.png": "/if-design/static/media/color_sample2.bee1ca64e04e57236a8c.png",
+    "static/media/icon_system.png": "/if-design/static/media/icon_system.f72185295e34a2919aa6.png",
     "index.html": "/if-design/index.html",
-    "main.4515e657.css.map": "/if-design/static/css/main.4515e657.css.map",
-    "main.8035e3a1.js.map": "/if-design/static/js/main.8035e3a1.js.map",
+    "main.7aeb8a7e.css.map": "/if-design/static/css/main.7aeb8a7e.css.map",
+    "main.2acd4ebe.js.map": "/if-design/static/js/main.2acd4ebe.js.map",
     "453.757a9701.chunk.js.map": "/if-design/static/js/453.757a9701.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4515e657.css",
-    "static/js/main.8035e3a1.js"
+    "static/css/main.7aeb8a7e.css",
+    "static/js/main.2acd4ebe.js"
   ]
 }
