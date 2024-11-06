@@ -12,6 +12,19 @@ function Section2() {
         <>
             <section id={menu[1].id}>
                 <img src={abcImg} alt="abc" className="abc-img" />
+                <div className="mobile-screens">
+                    <div className="inner">
+                        <div className="col-left">
+                            <img src={mobileImg1} alt="앱화면1" />
+                        </div>
+                        <div className="col-center">
+                            <img src={mobileImg2} alt="앱화면2" />
+                        </div>
+                        <div className="col-right">
+                            <img src={mobileImg3} alt="앱화면3" />
+                        </div>
+                    </div>
+                </div>
                 <div className="container">
                     <div className="title">
                         <h2 className="section-title">
@@ -37,28 +50,6 @@ function Section2() {
                                 <img src={brandImg3} alt="april어학원" />
                             </li>
                         </ul>
-                    </div>
-                    <div className="mobile-screens">
-                        <div className="inner">
-                            <div className="col-left">
-                                <img src={mobileImg1} alt="앱화면1" />
-                                {/* <div className="screen">screen image 1</div> */}
-                                {/* <div className="screen">screen image 2</div> */}
-                                {/* <div className="screen">screen image 3</div> */}
-                            </div>
-                            <div className="col-center">
-                                <img src={mobileImg2} alt="앱화면2" />
-                                {/* <div className="screen">screen image 4</div> */}
-                                {/* <div className="screen">screen image 5</div> */}
-                                {/* <div className="screen">screen image 6</div> */}
-                            </div>
-                            <div className="col-right">
-                                <img src={mobileImg3} alt="앱화면3" />
-                                {/* <div className="screen">screen image 7</div> */}
-                                {/* <div className="screen">screen image 8</div> */}
-                                {/* <div className="screen">screen image 9</div> */}
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

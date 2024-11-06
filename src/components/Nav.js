@@ -1,4 +1,5 @@
 import logoImg from "assets/img/CI_White.png";
+import logoImgWhite from "assets/img/logo_white.png";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";
 import menu from "assets/data/menu";
@@ -7,6 +8,7 @@ function Nav() {
     const scrollPosition = useScrollPosition();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
+    const [logoSrc, setLogoSrc] = useState(logoImgWhite);
     const onScrollMenu = (target) => {
         const targetId = target;
         const targetOffset =
@@ -17,8 +19,10 @@ function Nav() {
     useEffect(() => {
         if (scrollPosition !== 0) {
             setIsNavScrolling(true);
+            setLogoSrc(logoImg);
         } else {
             setIsNavScrolling(false);
+            setLogoSrc(logoImgWhite);
         }
     }, [scrollPosition]);
 
@@ -37,7 +41,7 @@ function Nav() {
                 <div className="container">
                     <h1 id="logo">
                         <a href="/">
-                            <img src={logoImg} alt="creverse" />
+                            <img src={logoSrc} alt="creverse" />
                         </a>
                     </h1>
                     <ul id="menu">

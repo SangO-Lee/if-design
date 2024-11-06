@@ -72,26 +72,40 @@ button {
         //section1
         #section1 {
             padding: 0;
-            height: 100dvh;
             overflow: hidden;
+            .main-visual {
+                position: relative;
+                aspect-ratio: 1920 / 880;
+                background: url("../img/main_visual_bg2.png") no-repeat center top / contain;
+                overflow: hidden;
+
+                .main-text {
+                    margin-top: 162px;
+                    @include hero;
+                    color: #fff;
+                }
+
+                .mockup {
+                    position: absolute;
+                    right: 11%;
+                    bottom: -51%;
+                }
+            }
             .main-quote {
                 position: relative;
                 display: flex;
+                padding: 44px 0 42px;
                 align-items: center;
-                height: 100%;
-                dl {
-                    position: absolute;
-                    left: 150px;
-                    bottom: 130px;
-                    width: 888px;
-                    max-width: 100%;
-                }
+                justify-content: center;
+                text-align: center;
+                background: #fff;
                 dt {
-                    margin-bottom: 24px;
-                    @include hero;
+                    margin-bottom: 16px;
+                    @include heading2;
+                    @include text-gradient;
                 }
                 dd {
-                    @include body1;
+                    @include body2;
                     color: $gray600;
                 }
             }
@@ -114,6 +128,7 @@ button {
         //section2
         #section2 {
             padding: 0;
+            height: 100dvh;
             background: url("../img/abc.png") no-repeat right 0 bottom 64px;
             background-attachment: fixed;
             .abc-img {
@@ -125,9 +140,13 @@ button {
             .container {
                 display: flex;
                 align-items: center;
+                height: 100%;
             }
             .title {
-                flex: 1;
+                z-index: 10;
+                position: relative;
+                width: 564px;
+                max-width: 100%;
                 .brand-list {
                     display: flex;
                     gap: 12px;
@@ -135,7 +154,9 @@ button {
                 padding-right: 80px;
             }
             .mobile-screens {
-                position: relative;
+                z-index: 0;
+                position: absolute;
+                right: 150px;
                 flex-basis: 954px;
                 min-width: 954px;
                 overflow: hidden;

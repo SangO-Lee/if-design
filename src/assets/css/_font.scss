@@ -49,3 +49,12 @@
     letter-spacing: -0.02em;
     line-height: 1.44;
 }
+@mixin text-gradient {
+    background: var(
+        --text1,
+        linear-gradient(98deg, #5eb2ba -12.28%, #3f696a 17.42%, #4e4e4e 47.92%, #5a7576 83.05%, #8ad6da 108.13%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
