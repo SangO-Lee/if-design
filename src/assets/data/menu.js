@@ -39,6 +39,11 @@ const menu = [
         name: "Overview",
         visible: false,
     },
+    {
+        id: "section9",
+        name: "Design Stytem",
+        visible: false,
+    },
 ];
 
 export default menu;

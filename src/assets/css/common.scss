@@ -489,13 +489,54 @@ button {
                 }
             }
         }
-
+        //section8
         #section8 {
             background: url("../img/overview.png") no-repeat center / cover;
             background-attachment: fixed;
         }
 
-        //section8
+        //section9
+        #section9 {
+            background: url("../img/design_guide_bg.png") no-repeat center / cover;
+            background-attachment: fixed;
+            .design-wrap {
+                display: flex;
+                flex-flow: column;
+                gap: 64px;
+
+                h3 {
+                    margin-bottom: 20px;
+                    @include sub-title;
+                    color: #767676;
+                }
+                .row {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 56px;
+                }
+                .color-wrap {
+                    flex-basis: 71%;
+                }
+                .icon-wrap {
+                    flex-basis: 29%;
+                }
+                .module-color-wrap {
+                    flex-basis: 53%;
+                }
+                .typo-graphic {
+                    flex-basis: 47%;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 73px;
+                    justify-content: space-between;
+                }
+                .typo-wrap {
+                }
+                .g-color-wrap {
+                    width: calc(100% + 140px);
+                }
+            }
+        }
     }
 
     #footer {
