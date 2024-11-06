@@ -18,6 +18,14 @@ function Nav() {
 
     useEffect(() => {
         if (scrollPosition !== 0) {
+            setLogoSrc(logoImg);
+        } else {
+            setLogoSrc(logoImgWhite);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (scrollPosition !== 0) {
             setIsNavScrolling(true);
             setLogoSrc(logoImg);
         } else {

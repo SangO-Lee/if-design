@@ -38,9 +38,13 @@ button {
         }
         .section-title {
             margin-bottom: 60px;
+            width: fit-content;
             @include heading1;
+            @include text-gradient;
             font-weight: bold;
             &.text-center {
+                margin-left: auto;
+                margin-right: auto;
                 text-align: center;
                 & + .sub-title {
                     text-align: center;
@@ -50,13 +54,15 @@ button {
                 display: block;
                 margin-bottom: 12px;
                 @include sub-title;
+                color: #767676;
+                display: none;
             }
 
             & + .sub-title {
                 margin-top: -40px;
                 margin-bottom: 60px;
                 // text-align: center;
-                @include body1;
+                @include body2;
                 color: $gray900;
             }
         }
@@ -100,7 +106,8 @@ button {
                 text-align: center;
                 background: #fff;
                 dt {
-                    margin-bottom: 16px;
+                    width: fit-content;
+                    margin: 0 auto 16px;
                     @include heading2;
                     @include text-gradient;
                 }
@@ -128,89 +135,99 @@ button {
         //section2
         #section2 {
             padding: 0;
-            height: 100dvh;
-            background: url("../img/abc.png") no-repeat right 0 bottom 64px;
-            background-attachment: fixed;
-            .abc-img {
-                display: none;
-                position: absolute;
-                right: 0;
-                bottom: 64px;
-            }
-            .container {
-                display: flex;
-                align-items: center;
-                height: 100%;
-            }
-            .title {
-                z-index: 10;
-                position: relative;
-                width: 564px;
-                max-width: 100%;
-                .brand-list {
-                    display: flex;
-                    gap: 12px;
-                }
-                padding-right: 80px;
-            }
-            .mobile-screens {
-                z-index: 0;
-                position: absolute;
-                right: 150px;
-                flex-basis: 954px;
-                min-width: 954px;
-                overflow: hidden;
+            aspect-ratio: 1920 / 1080;
+            background: url("../img/consultation_portal_bg.png") no-repeat center / contain;
 
-                &::before,
-                &::after {
-                    z-index: 100;
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    position: absolute;
-                    left: 0;
-                    height: 40%;
-                }
-                &::before {
-                    top: 0;
-                    background: linear-gradient(0, rgba(255, 255, 255, 0) 73.41%, #fff 100%);
-                }
-
-                &::after {
-                    bottom: 0;
-                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.09%, #fff 96.74%);
-                    mix-blend-mode: hard-light;
-                }
-                .inner {
-                    display: flex;
-                    gap: 16px;
-                    height: fit-content;
-                    > div {
-                        flex: 1;
-                        display: flex;
-                        flex-flow: column;
-                        gap: 16px;
-
-                        &.col-left {
-                            opacity: 33%;
-                        }
-                        &.col-center {
-                            opacity: 66%;
-                        }
-                    }
-                }
-
-                .screen {
-                    border-radius: 12px;
-                    background: $bg-light;
-                    aspect-ratio: 375 / 812;
-                    padding: 20px;
-                }
+            .section-title {
+                padding-top: 140px;
+                @include text-gradient;
             }
+            // padding: 0;
+            // height: 100dvh;
+            // background: url("../img/abc.png") no-repeat right 0 bottom 64px;
+            // background-attachment: fixed;
+            // .abc-img {
+            //     display: none;
+            //     position: absolute;
+            //     right: 0;
+            //     bottom: 64px;
+            // }
+            // .container {
+            //     display: flex;
+            //     align-items: center;
+            //     height: 100%;
+            // }
+            // .title {
+            //     z-index: 10;
+            //     position: relative;
+            //     width: 564px;
+            //     max-width: 100%;
+            //     .brand-list {
+            //         display: flex;
+            //         gap: 12px;
+            //     }
+            //     padding-right: 80px;
+            // }
+            // .mobile-screens {
+            //     z-index: 0;
+            //     position: absolute;
+            //     right: 150px;
+            //     flex-basis: 954px;
+            //     min-width: 954px;
+            //     overflow: hidden;
+
+            //     &::before,
+            //     &::after {
+            //         z-index: 100;
+            //         content: "";
+            //         display: block;
+            //         width: 100%;
+            //         position: absolute;
+            //         left: 0;
+            //         height: 40%;
+            //     }
+            //     &::before {
+            //         top: 0;
+            //         background: linear-gradient(0, rgba(255, 255, 255, 0) 73.41%, #fff 100%);
+            //     }
+
+            //     &::after {
+            //         bottom: 0;
+            //         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.09%, #fff 96.74%);
+            //         mix-blend-mode: hard-light;
+            //     }
+            //     .inner {
+            //         display: flex;
+            //         gap: 16px;
+            //         height: fit-content;
+            //         > div {
+            //             flex: 1;
+            //             display: flex;
+            //             flex-flow: column;
+            //             gap: 16px;
+
+            //             &.col-left {
+            //                 opacity: 33%;
+            //             }
+            //             &.col-center {
+            //                 opacity: 66%;
+            //             }
+            //         }
+            //     }
+
+            //     .screen {
+            //         border-radius: 12px;
+            //         background: $bg-light;
+            //         aspect-ratio: 375 / 812;
+            //         padding: 20px;
+            //     }
+            // }
         }
 
         //section3
         #section3 {
+            background: linear-gradient(0deg, rgba(161, 225, 242, 0.1) 0%, rgba(161, 225, 242, 0.1) 100%),
+                linear-gradient(0deg, rgba(43, 214, 169, 0) 0%, rgba(43, 214, 169, 0.2) 100%), #fff;
             .card-wrap {
                 display: flex;
                 gap: 30px;
@@ -239,6 +256,8 @@ button {
                         transform: rotate3d(0, 0, 0, 180deg);
                         transform-style: preserve-3d;
                         border-radius: 40px;
+                        height: 100%;
+                        object-fit: cover;
                         transition: all 0.6s ease;
                     }
                     .txt-box {
@@ -311,7 +330,7 @@ button {
                     flex: 1;
                     position: relative;
                     aspect-ratio: 794 / 668;
-                    padding: 72px 88px;
+                    padding: 52px 75px;
 
                     &:nth-child(1) {
                         background: url(../img/teacher_box1.png) no-repeat center / contain;
@@ -334,7 +353,7 @@ button {
                     }
                 }
                 p {
-                    width: 320px;
+                    width: 290px;
                     @include body2;
                     color: $gray900;
                 }
@@ -416,9 +435,9 @@ button {
         //section7
         #section7 {
             padding: 0;
-            height: 100dvh;
+            aspect-ratio: 1920 / 1080;
             overflow: hidden;
-            background: url("../img/color_bg.png") no-repeat right 12px bottom 20px;
+            background: url("../img/color_bg.png") no-repeat center / cover;
             .container {
                 position: relative;
                 height: 100%;
@@ -437,10 +456,10 @@ button {
                     .component-list {
                         z-index: 10;
                         position: absolute;
-                        right: 20px;
+                        right: 0;
                         top: 80px;
                         display: flex;
-                        gap: 24px;
+                        gap: 16px;
                         width: 1170px;
                     }
                 }
@@ -449,7 +468,7 @@ button {
                     position: absolute;
                     right: 0;
                     bottom: 130px;
-                    width: 967px;
+                    width: 877px;
                     max-width: 100%;
 
                     p {
@@ -512,6 +531,7 @@ button {
         }
         //section8
         #section8 {
+            aspect-ratio: 1920/1080;
             background: url("../img/overview.png") no-repeat center / cover;
             background-attachment: fixed;
         }
@@ -519,7 +539,6 @@ button {
         //section9
         #section9 {
             background: url("../img/design_guide_bg.png") no-repeat center / cover;
-            background-attachment: fixed;
             .design-wrap {
                 display: flex;
                 flex-flow: column;
@@ -548,13 +567,20 @@ button {
                     flex-basis: 47%;
                     display: flex;
                     flex-flow: column;
-                    gap: 73px;
+                    gap: 80px;
                     justify-content: space-between;
                 }
-                .typo-wrap {
-                }
                 .g-color-wrap {
-                    width: calc(100% + 140px);
+                    position: relative;
+                    &::after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 20%;
+                        height: 100%;
+                    }
                 }
             }
         }

@@ -37,8 +37,7 @@ function Section5() {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur. Vitae
                                 faucibus nisl nascetur cursus. Varius quis
-                                pellentesque condimentum tempor enim. Posuere
-                                aliquam amet amet nulla quis.
+                                pellentesque condimentum tempor enim.
                             </p>
                         </div>
                         <div className="item">
@@ -53,8 +52,7 @@ function Section5() {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur. Vitae
                                 faucibus nisl nascetur cursus. Varius quis
-                                pellentesque condimentum tempor enim. Posuere
-                                aliquam amet amet nulla quis.
+                                pellentesque condimentum tempor enim.
                             </p>
                         </div>
                     </div>

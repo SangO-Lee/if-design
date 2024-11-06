@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import menu from "assets/data/menu";
-import ScrollProgress from "components/common/ScollProgress";
 import userFlowImg from "assets/img/user_flow.png";
 
 function Section6() {
     const targetRef = React.useRef(null);
-    const [progress, setProgress] = useState(0);
-    const handleProgressChange = (newProgress) => {
-        setProgress(newProgress);
-    };
 
     return (
         <>

@@ -13,8 +13,10 @@ function Section1() {
                     />
                     <div className="container">
                         <p className="main-text">
-                            Creverse <br />
-                            Integrated Academy <br />
+                            Creverse
+                            <br />
+                            Integrated Academy AI
+                            <br />
                             Management Service
                         </p>
                     </div>

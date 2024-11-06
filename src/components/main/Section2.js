@@ -11,7 +11,13 @@ function Section2() {
     return (
         <>
             <section id={menu[1].id}>
-                <img src={abcImg} alt="abc" className="abc-img" />
+                <div className="container">
+                    <h2 className="section-title text-center">
+                        <small>consultation portal</small>CREVERSE Consultation
+                        AI Portal
+                    </h2>
+                </div>
+                {/* <img src={abcImg} alt="abc" className="abc-img" />
                 <div className="mobile-screens">
                     <div className="inner">
                         <div className="col-left">
@@ -51,7 +57,7 @@ function Section2() {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     );
