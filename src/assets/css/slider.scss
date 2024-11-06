@@ -1,4 +1,4 @@
-@import "./font", "./color";
+@import "../_font", "../_color";
 
 /* Slider Container */
 .slider {
@@ -53,7 +53,7 @@
     }
     .title {
         margin-bottom: 12px;
-        @include headline3;
+        @include sub-title;
         font-weight: bold;
     }
     .description {

@@ -2,41 +2,46 @@ const menu = [
     {
         id: "section1",
         name: "Introduction",
-        visible: true,
+        visible: false,
     },
     {
         id: "section2",
-        name: "Mobile App",
+        name: "About",
         visible: true,
     },
     {
         id: "section3",
-        name: "Features",
+        name: "Service",
         visible: true,
     },
     {
         id: "section4",
-        name: "Communication Log",
-        visible: true,
+        name: "Flywheel model",
+        visible: false,
     },
     {
         id: "section5",
-        name: "User Benefits",
+        name: "Teacher App",
         visible: true,
     },
     {
         id: "section6",
-        name: "Introduction",
-        visible: false,
+        name: "User Flow",
+        visible: true,
     },
     {
         id: "section7",
-        name: "Introduction",
-        visible: false,
+        name: "Color System",
+        visible: true,
     },
     {
         id: "section8",
-        name: "Introduction",
+        name: "Overview",
+        visible: false,
+    },
+    {
+        id: "section9",
+        name: "Design Stytem",
         visible: false,
     },
 ];

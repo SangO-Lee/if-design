@@ -1,4 +1,3 @@
-import "assets/css/nav.scss";
 import logoImg from "assets/img/CI_White.png";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";

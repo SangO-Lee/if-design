@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "assets/css/newsticker.scss";
+import "assets/css/prototype/newsticker.scss";
 
 const NewsTicker = ({ images }) => {
     const tickerRef = useRef(null);

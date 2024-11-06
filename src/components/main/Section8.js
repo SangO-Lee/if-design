@@ -12,15 +12,14 @@ function Section8() {
 
     return (
         <>
-            <ScrollProgress
+            {/* <ScrollProgress
                 targetRef={targetRef}
                 onProgressChange={handleProgressChange}
-            />
-            ;
+            /> */}
             <section id={menu[7].id} ref={targetRef}>
-                <div className="container">
-                    <CounterSection progress={progress} />
-                </div>
+                {/* <div className="container"> */}
+                {/* <CounterSection progress={progress} /> */}
+                {/* </div> */}
             </section>
         </>
     );

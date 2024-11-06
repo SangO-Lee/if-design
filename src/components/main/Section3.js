@@ -1,60 +1,83 @@
 import menu from "assets/data/menu";
 import React from "react";
-const TRAITS = [
-    {
-        title: "Effortless Attendance Tracking",
-        description: "Lorem ipsum dolor sit amet,\n consectetur adipiscing.",
-    },
-    {
-        title: "Streamlined Assignment Workflow",
-        description: "Lorem ipsum dolor sit amet,\n consectetur adipiscing.",
-    },
-    {
-        title: "Real-Time Student Insights",
-        description: "Lorem ipsum dolor sit amet,\n consectetur adipiscing.",
-    },
-    {
-        title: "Instant Communication Tools",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-        title: "Secure and Accessible Data",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-];
+import packageImg1 from "assets/img/app_package1.png";
+import packageImg2 from "assets/img/app_package2.png";
+import packageImg3 from "assets/img/app_package3.png";
+import packageImg4 from "assets/img/app_package4.png";
 
 function Section3() {
     return (
         <>
             <section id={menu[2].id}>
                 <div className="container">
-                    <h2 className="section-title">
-                        Next-Level Features for Smarter Classrooms
+                    <h2 className="section-title text-center">
+                        <small>service</small>
+                        Integrated Academy Management Solution
                     </h2>
 
                     <div className="card-wrap">
-                        {TRAITS.map((trait, index) => (
-                            <div
-                                key={index}
-                                className={`card ${
-                                    index <= 2 ? "card-2" : "card-3"
-                                }`}
-                            >
-                                <h3 className="card-title">{trait.title}</h3>
-                                <p className="card-description">
-                                    {trait.description
-                                        .split("\n")
-                                        .map((line, i) => (
-                                            <React.Fragment key={i}>
-                                                {line}
-                                                <br />
-                                            </React.Fragment>
-                                        ))}
-                                </p>
+                        <div className="col col-left">
+                            <div className="item item1">
+                                <img src={packageImg1} alt="상담포털" />
+                                <div className="txt-box">
+                                    <h3>Consultation Portal</h3>
+                                    <p>
+                                        A phone consultation system based on
+                                        AI-driven analysis of learning progress
+                                        and academic management data, providing
+                                        parents with personalized, systematic,
+                                        and regular updates on their children's
+                                        learning status and achievements.
+                                    </p>
+                                </div>
                             </div>
-                        ))}
+                        </div>
+                        <div className="col col-center">
+                            <div className="item item2">
+                                <img src={packageImg2} alt="강사앱" />
+                                <div className="txt-box">
+                                    <h3>Teacher App</h3>
+                                    <p>
+                                        Designed for teachers and counselors,
+                                        this app allows for the registration and
+                                        management of student attendance and
+                                        grades, and facilitates smooth
+                                        communication with parents through
+                                        features such as notification boards and
+                                        teacher comments related to the
+                                        student's learning progress.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col col-right">
+                            <div className="item item3">
+                                <img src={packageImg3} alt="관리자앱" />
+                                <div className="txt-box">
+                                    <h3>Administrator App</h3>
+                                    <p>
+                                        An app that supports the overall
+                                        management of the academy, enabling
+                                        systematic control over staff task
+                                        management, attendance tracking, and
+                                        academy status statistics.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="item item4">
+                                <img src={packageImg4} alt="셔틀버스앱" />
+                                <div className="txt-box">
+                                    <h3>Shuttle Bus Management App</h3>
+                                    <p>
+                                        This app ensures the safe transportation
+                                        of children to and from the academy by
+                                        providing parents with real-time
+                                        information on pick-up and drop-off,
+                                        offering peace of mind.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,17 @@
+.news-ticker {
+    overflow: hidden;
+    width: 100%;
+    .ticker-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        gap: 80px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .ticker-image {
+            flex: 0 0 auto;
+        }
+    }
+}

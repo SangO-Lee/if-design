@@ -1,4 +1,4 @@
-@import "_font", "_color";
+@import "../_font", "../_color";
 
 .count-section {
     display: flex;
@@ -28,13 +28,13 @@
         }
 
         h2 {
-            @include title1;
+            @include heading1;
             font-weight: bold;
             text-transform: capitalize;
         }
         p {
             @include body1;
-            color: $f-gray;
+            color: $gray900;
         }
     }
 }

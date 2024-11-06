@@ -1,0 +1,128 @@
+@import "./_font", "./_color";
+
+/* Slider Container */
+.slider {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    opacity: 0.4;
+    transition: all 0.6s ease;
+
+    &:hover {
+        opacity: 0.6;
+    }
+    &.active {
+        // transform: translateX(0);
+        opacity: 1;
+    }
+
+    .txt-box {
+        position: relative;
+        width: 100%;
+        padding: 0 20px 32px;
+        cursor: pointer;
+
+        /* Indicator */
+        .indicator {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            width: 100%;
+            background: $bg-black;
+            transition: width 0.1s linear;
+        }
+    }
+    .title {
+        margin-bottom: 12px;
+        @include headline3;
+        font-weight: bold;
+    }
+    .description {
+        @include body1;
+    }
+}
+
+.slider {
+    .img-box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        .img {
+            opacity: 0;
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            background: $bg-dark;
+            transform: translate3d(0, 20px, 0);
+            transition: all 0.6s ease;
+
+            &.img1 {
+                background: #f06262;
+            }
+            &.img2 {
+                background: #62b7f0;
+            }
+            &.img3 {
+                background: #f0ae62;
+            }
+            &.img4 {
+                background: #66d46c;
+            }
+
+            &.active {
+                z-index: 10;
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* Controls */
+.controls {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    // bottom: 10px;
+    // right: 10px;
+    display: none;
+}
+
+.controls button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
