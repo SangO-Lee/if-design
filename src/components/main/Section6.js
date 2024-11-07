@@ -12,17 +12,16 @@ function Section6() {
                     <div className="title-box">
                         <h2 className="section-title">
                             <small>user flow</small>
-                            Creverse Integrated Academy
-                            <br />
-                            Management Service
+                            Key Features User Flow and Data Integration
                         </h2>
                         <p className="sub-title">
-                            Lorem ipsum dolor sit amet consectetur. Orci
-                            scelerisque augue et sed tortor sagittis
-                            sollicitudin convallis. Ut sed condimentum neque
-                            habitant. Proin sed non velit varius vulputate
-                            hendrerit sed. A elit ac potenti facilisis
-                            adipiscing congue nullam.
+                            A key feature of CREVERSE academy management is that
+                            data from various channels is displayed differently
+                            according to permissions, offering an integrated
+                            view of information. By analyzing cases of these
+                            diverse information displays, we designed the UI to
+                            provide each user with optimized, customized data of
+                            a similar nature.
                         </p>
                     </div>
                     <img src={userFlowImg} alt="user flow" />

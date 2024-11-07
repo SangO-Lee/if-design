@@ -42,12 +42,18 @@ function Section7() {
                             Colors that Connect and Communicate
                         </h2>
                         <p className="sub-title column-2">
-                            Creverse operates over 300 direct and franchise
-                            branches nationwide, centered around four flagship
-                            <br />
-                            In response to the rapidly changing times, Creverse
-                            has developed an Integrated Academy Management
-                            Service.
+                            CREVERSE's existing color system consists of a
+                            corporate identity (CI) representing the company and
+                            separate color systems for each brand.
+                        </p>
+                        <p className="sub-title column-2">
+                            In this integrated academy management service, the
+                            color system based on the CREVERSE CI is applied to
+                            common screens, including the main home screen. For
+                            areas unique to each brand, such as online academic
+                            performance check sections, the brand colors are
+                            used to visually distinguish the roles of each menu
+                            intuitively.
                         </p>
 
                         <ul className="color-list">

@@ -1,5 +1,7 @@
 import menu from "assets/data/menu";
 import React from "react";
+import objectImg1 from "assets/img/app_package_obj1.png";
+import objectImg2 from "assets/img/app_package_obj2.png";
 import packageImg1 from "assets/img/app_package1.png";
 import packageImg2 from "assets/img/app_package2.png";
 import packageImg3 from "assets/img/app_package3.png";
@@ -9,18 +11,15 @@ function Section3() {
     return (
         <>
             <section id={menu[2].id}>
+                <img src={objectImg1} alt="오브제1" className="obj1" />
+                <img src={objectImg2} alt="오브제2" className="obj2" />
                 <div className="container">
-                    <h2 className="section-title text-center">
-                        <small>service</small>
-                        Integrated Academy Management Solution
-                    </h2>
-
                     <div className="card-wrap">
                         <div className="col col-left">
                             <div className="item item1">
                                 <img src={packageImg1} alt="상담포털" />
                                 <div className="txt-box">
-                                    <h3>Consultation Portal</h3>
+                                    <h3>Consultation AI Portal</h3>
                                     <p>
                                         A phone consultation system based on
                                         AI-driven analysis of learning progress
@@ -36,7 +35,7 @@ function Section3() {
                             <div className="item item2">
                                 <img src={packageImg2} alt="강사앱" />
                                 <div className="txt-box">
-                                    <h3>Teacher App</h3>
+                                    <h3>Teacher’s Assistant App</h3>
                                     <p>
                                         Designed for teachers and counselors,
                                         this app allows for the registration and
@@ -54,7 +53,7 @@ function Section3() {
                             <div className="item item3">
                                 <img src={packageImg3} alt="관리자앱" />
                                 <div className="txt-box">
-                                    <h3>Administrator App</h3>
+                                    <h3>MANAGER App</h3>
                                     <p>
                                         An app that supports the overall
                                         management of the academy, enabling
@@ -67,7 +66,10 @@ function Section3() {
                             <div className="item item4">
                                 <img src={packageImg4} alt="셔틀버스앱" />
                                 <div className="txt-box">
-                                    <h3>Shuttle Bus Management App</h3>
+                                    <h3>
+                                        Shuttle Bus <br />
+                                        Management App
+                                    </h3>
                                     <p>
                                         This app ensures the safe transportation
                                         of children to and from the academy by

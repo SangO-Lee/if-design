@@ -29,17 +29,18 @@ function Section1() {
                                 the Future of Children
                             </dt>
                             <dd>
-                                Since 1998, Creverse has been a premium
-                                education company dedicated to nurturing the
-                                "power of thinking" in children to prepare them
-                                for the future. We focus on cultivating
-                                problem-solving skills through a variety of
-                                English and Math education programs that enhance
-                                literacy, creativity, and storytelling
-                                abilities. Creverse is committed to discovering
-                                and developing global talents who will lead new
-                                industries where culture and knowledge converge,
-                                while supporting them
+                                As the era of artificial intelligence (AI)
+                                unfolds, we have developed this service to
+                                enhance the overall quality of academy
+                                management by transitioning traditional
+                                offline-focused operations to a digital platform
+                                and integrating AI technologies. By implementing
+                                a data-driven AI analytical consultation system
+                                and offering user-specific customized features,
+                                we aim to provide an efficient and high-quality
+                                academic environment not only for academy
+                                administrators but also for parents and
+                                students.
                             </dd>
                         </dl>
                     </div>

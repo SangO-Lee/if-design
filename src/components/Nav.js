@@ -9,6 +9,18 @@ function Nav() {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
     const [logoSrc, setLogoSrc] = useState(logoImgWhite);
+
+    // 원하는 순서로 재정렬된 메뉴 항목
+    const customOrderMenu = [
+        menu[0], // Main
+        menu[1], // Consultation Portal
+        menu[2], // App Package
+        menu[4], // Teacher's App
+        menu[5], // User Flow
+        menu[8], // Design System
+        menu[7], // Overview
+    ];
+
     const onScrollMenu = (target) => {
         const targetId = target;
         const targetOffset =
@@ -53,7 +65,7 @@ function Nav() {
                         </a>
                     </h1>
                     <ul id="menu">
-                        {menu.map((menu, index) => (
+                        {customOrderMenu.map((menu, index) => (
                             <li
                                 key={index}
                                 className={!menu.visible ? "hidden" : ""}

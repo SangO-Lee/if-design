@@ -19,10 +19,10 @@ function Main() {
             <main>
                 <div>
                     <Section1 />
-                    <Section2 />
                     <Section4 />
-                    <Section3 />
+                    <Section2 />
                     <Section5 />
+                    <Section3 />
                     <Section6 />
                     <Section9 />
                     <Section7 />

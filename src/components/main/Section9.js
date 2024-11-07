@@ -40,10 +40,12 @@ function Section9() {
                                 </div>
                                 <div className="g-color-wrap">
                                     <h3>Graphic color</h3>
-                                    <img
-                                        src={graphicImg}
-                                        alt="grade components"
-                                    />
+                                    <div class="g-color-img">
+                                        <img
+                                            src={graphicImg}
+                                            alt="grade components"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 @import "./_layout", "./_color", "./_font";
 @import "assets/fonts/pretendardvariable.css";
 @import "assets/fonts/DMSans.css";
+//common
 html,
 body {
     scroll-behavior: smooth;
@@ -57,21 +58,26 @@ button {
                 color: #767676;
                 display: none;
             }
-
-            & + .sub-title {
-                margin-top: -40px;
-                margin-bottom: 60px;
-                // text-align: center;
-                @include body2;
-                color: $gray900;
-            }
+        }
+        .sub-title {
+            margin-top: -40px;
+            margin-bottom: 60px;
+            // text-align: center;
+            @include body2;
+            color: $gray900;
         }
         .title-box {
+            margin-bottom: 60px;
             display: flex;
-            align-items: flex-end;
-            h2,
-            p {
-                flex: 1;
+            gap: 48px;
+            align-items: flex-start;
+            .section-title,
+            .sub-title {
+                margin: 0;
+                // flex: 1;
+            }
+            .section-title {
+                white-space: nowrap;
             }
         }
 
@@ -86,6 +92,8 @@ button {
                 overflow: hidden;
 
                 .main-text {
+                    z-index: 10;
+                    position: relative;
                     margin-top: 162px;
                     @include hero;
                     color: #fff;
@@ -95,6 +103,7 @@ button {
                     position: absolute;
                     right: 11%;
                     bottom: -51%;
+                    width: 42.5%;
                 }
             }
             .main-quote {
@@ -139,7 +148,7 @@ button {
             background: url("../img/consultation_portal_bg.png") no-repeat center / contain;
 
             .section-title {
-                padding-top: 140px;
+                padding-top: 6.4%;
                 @include text-gradient;
             }
             // padding: 0;
@@ -226,21 +235,32 @@ button {
 
         //section3
         #section3 {
-            background: linear-gradient(0deg, rgba(161, 225, 242, 0.1) 0%, rgba(161, 225, 242, 0.1) 100%),
-                linear-gradient(0deg, rgba(43, 214, 169, 0) 0%, rgba(43, 214, 169, 0.2) 100%), #fff;
+            position: relative;
+            background: url("../img/app_package_bg.png") no-repeat center / cover;
+            .obj1,
+            .obj2 {
+                z-index: 10;
+                position: absolute;
+            }
+            .obj1 {
+                left: 10%;
+                top: 60%;
+            }
+            .obj2 {
+                right: 14%;
+                bottom: -4%;
+            }
+
             .card-wrap {
                 display: flex;
                 gap: 30px;
                 .col {
                     border-radius: 40px;
                     &-left {
-                        flex: 2;
                     }
                     &-center {
-                        flex: 1;
                     }
                     &-right {
-                        flex: 1;
                         display: flex;
                         flex-flow: column;
                         gap: 30px;
@@ -274,11 +294,11 @@ button {
                         transition: all 0.6s ease;
                         h3 {
                             margin-bottom: 20px;
-                            @include heading2;
+                            @include sub-title;
                         }
                         p {
                             @include body2;
-                            opacity: 0.8;
+                            opacity: 0.7;
                         }
                     }
 
@@ -293,18 +313,16 @@ button {
                         }
                     }
                     &.item1 .txt-box {
-                        background: #f9ce78;
+                        background: #c5ebf1;
                     }
                     &.item2 .txt-box {
-                        color: #fff;
-                        background: #4d4e4d;
+                        background: #dadada;
                     }
                     &.item3 .txt-box {
-                        color: #fff;
-                        background: #6479db;
+                        background: #cfe6e4;
                     }
                     &.item4 .txt-box {
-                        background: #a9db65;
+                        background: #e1e9ff;
                     }
                 }
             }
@@ -316,6 +334,115 @@ button {
             overflow-x: hidden;
             background: url("../img/gradient_bubble_bg.png") no-repeat center top / 100% auto;
             background-attachment: fixed;
+
+            .flywheel-wrap {
+                position: relative;
+                aspect-ratio: 1507/685;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                // &::before {
+                //     content: "";
+                //     opacity: 0.2;
+                //     display: block;
+                //     width: 100%;
+                //     height: 100%;
+                //     position: absolute;
+                //     left: 0;
+                //     top: 0;
+                //     background: url("../img/flywheel_full.png") no-repeat center / contain;
+                // }
+
+                .flywheel-img {
+                    z-index: 10;
+                    position: relative;
+                }
+                .txt-box {
+                    z-index: 10;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 250px;
+                    h3 {
+                        margin-bottom: 8px;
+                    }
+
+                    &.text-right {
+                        text-align: right;
+                        h3 {
+                            margin-left: auto;
+                        }
+                    }
+                    &.img-title {
+                        left: 11.9%;
+                        top: 0%;
+                        h3 {
+                            color: #3f3f3f;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 120%; /* 21.6px */
+                            letter-spacing: -0.36px;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            color: $gray900;
+                            @include caption1;
+                        }
+                    }
+                    &.type1 {
+                        h3 {
+                            width: fit-content;
+                            @include text-gradient;
+                            @include heading2;
+                        }
+                        p {
+                            @include body2;
+                            color: $gray900;
+                        }
+                    }
+                    &.type2 {
+                        h3 {
+                            @include sub-title;
+                            color: #3f3f3f;
+                        }
+                        p {
+                            @include body2;
+                            color: $gray900;
+                        }
+                    }
+
+                    &.box1 {
+                        width: 290px;
+                        left: 78.7%;
+                        top: 6.8%;
+                    }
+                    &.box2 {
+                        width: 290px;
+                        left: 0.4%;
+                        top: 50%;
+                    }
+                    &.box3 {
+                        width: 250px;
+                        left: 81.5%;
+                        top: 44.8%;
+                    }
+                    &.box4 {
+                        width: 250px;
+                        left: 74%;
+                        top: 75.1%;
+                    }
+                    &.box5 {
+                        width: 350px;
+                        left: 0%;
+                        top: 72.6%;
+                    }
+                    &.box6 {
+                        width: 390px;
+                        left: 3.8%;
+                        top: 26.7%;
+                    }
+                }
+            }
         }
 
         //section5
@@ -329,31 +456,53 @@ button {
                 .item {
                     flex: 1;
                     position: relative;
-                    aspect-ratio: 794 / 668;
-                    padding: 52px 75px;
+                    aspect-ratio: 518 / 671;
+                    padding: 40px;
+                    display: flex;
+                    flex-flow: column;
+                    overflow: hidden;
 
-                    &:nth-child(1) {
-                        background: url(../img/teacher_box1.png) no-repeat center / contain;
+                    &.item1 {
+                        background: url(../img/teacher_app_bg1.png) no-repeat center / contain;
                     }
-                    &:nth-child(2) {
-                        background: url(../img/teacher_box2.png) no-repeat center / contain;
+                    &.item2 {
+                        justify-content: flex-end;
+                        background: url(../img/teacher_app_bg2.png) no-repeat center / contain;
+
+                        .screen {
+                            bottom: auto;
+                            top: -40%;
+                        }
+                    }
+                    &.item3 {
+                        background: url(../img/teacher_app_bg3.png) no-repeat center / contain;
+                    }
+
+                    .screen {
+                        position: absolute;
+                        width: 61.7%;
+                        left: 50%;
+                        transform: translate3d(-50%, 0, 0);
+                        bottom: -36%;
                     }
                 }
                 h3 {
                     position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
                     margin-bottom: 12px;
-                    @include heading2;
+                    @include sub-title;
                     color: $black;
 
-                    .icon {
-                        position: absolute;
-                        right: 100%;
-                        top: -2px;
-                        margin-right: 8px;
-                    }
+                    // .icon {
+                    //     position: absolute;
+                    //     right: 100%;
+                    //     top: -2px;
+                    //     margin-right: 8px;
+                    // }
                 }
                 p {
-                    width: 290px;
                     @include body2;
                     color: $gray900;
                 }
@@ -468,14 +617,15 @@ button {
                     position: absolute;
                     right: 0;
                     bottom: 130px;
-                    width: 877px;
+                    width: 840px;
                     max-width: 100%;
 
                     p {
-                        column-count: 2;
-                        column-gap: 24px;
+                        // column-count: 2;
+                        // column-gap: 24px;
                         width: 774px;
                         max-width: 100%;
+                        color: $gray600;
                     }
 
                     .color-list {
@@ -488,9 +638,10 @@ button {
                             text-align: center;
                             border: 1px solid $l-regular;
                             flex-basis: 100px;
+                            background: #fff;
                             &::before {
                                 content: "";
-                                margin-bottom: 16px;
+                                margin-bottom: 15px;
                                 display: block;
                                 width: 100%;
                                 aspect-ratio: 1/1;
@@ -517,12 +668,14 @@ button {
                                 margin-bottom: 4px;
                                 @include caption1;
                                 color: $black;
+                                line-height: 1;
                             }
                             .value {
                                 display: block;
-                                margin-bottom: 16px;
+                                margin-bottom: 15px;
                                 @include caption2;
                                 color: $gray900;
+                                line-height: auto;
                             }
                         }
                     }
@@ -539,6 +692,7 @@ button {
         //section9
         #section9 {
             background: url("../img/design_guide_bg.png") no-repeat center / cover;
+            background-attachment: fixed;
             .design-wrap {
                 display: flex;
                 flex-flow: column;
@@ -567,19 +721,32 @@ button {
                     flex-basis: 47%;
                     display: flex;
                     flex-flow: column;
-                    gap: 80px;
+                    gap: 53px;
                     justify-content: space-between;
                 }
                 .g-color-wrap {
-                    position: relative;
-                    &::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        width: 20%;
-                        height: 100%;
+                    width: 630px;
+                    .g-color-img {
+                        position: relative;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 20%;
+                            height: 100%;
+                            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+                        }
+
+                        img {
+                            max-width: none;
+                            height: 167px;
+                        }
                     }
                 }
             }

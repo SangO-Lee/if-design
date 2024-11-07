@@ -16,6 +16,20 @@ function Section2() {
                         <small>consultation portal</small>CREVERSE Consultation
                         AI Portal
                     </h2>
+                    <p className="sub-title">
+                        The Consultation AI Portal is CREVERSE's unique
+                        integrated consultation service, connecting over 400
+                        branches nationwide through an IP CC call center
+                        infrastructure.
+                        <br />
+                        This platform analyzes students' learning data using AI
+                        to provide tailored educational information and
+                        consultation scripts to all direct and franchise
+                        academies. <br />
+                        Furthermore, it offers comprehensive data analysis of
+                        the academies, enabling AI-driven unified search for all
+                        information necessary for consultations
+                    </p>
                 </div>
                 {/* <img src={abcImg} alt="abc" className="abc-img" />
                 <div className="mobile-screens">
