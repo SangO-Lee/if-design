@@ -2,9 +2,9 @@ import menu from "assets/data/menu";
 import teacherIcon1 from "assets/img/teacher_app1.png";
 import teacherIcon2 from "assets/img/teacher_app2.png";
 import teacherIcon3 from "assets/img/teacher_app3.png";
-import teacherScreenImg1 from "assets/img/teacher_app_screen1.png";
-import teacherScreenImg2 from "assets/img/teacher_app_screen2.png";
-import teacherScreenImg3 from "assets/img/teacher_app_screen3.png";
+import teacherScreenImg1 from "assets/img/teacher_app_screen1_2x.png";
+import teacherScreenImg2 from "assets/img/teacher_app_screen2_2x.png";
+import teacherScreenImg3 from "assets/img/teacher_app_screen3_2x.png";
 
 function Section5() {
     return (

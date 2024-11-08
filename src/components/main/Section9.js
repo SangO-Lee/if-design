@@ -1,8 +1,8 @@
 import menu from "assets/data/menu";
 import React from "react";
-import colorImg from "assets/img/color_system.png";
+import colorImg from "assets/img/color_system_2x.png";
 import iconImg from "assets/img/icon_system.png";
-import moduleImg from "assets/img/module_system.png";
+import moduleImg from "assets/img/module_system_2x.png";
 import typoImg from "assets/img/typo_system.png";
 import graphicImg from "assets/img/graphic_system.png";
 
@@ -40,7 +40,7 @@ function Section9() {
                                 </div>
                                 <div className="g-color-wrap">
                                     <h3>Graphic color</h3>
-                                    <div class="g-color-img">
+                                    <div className="g-color-img">
                                         <img
                                             src={graphicImg}
                                             alt="grade components"

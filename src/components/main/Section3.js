@@ -2,10 +2,10 @@ import menu from "assets/data/menu";
 import React from "react";
 import objectImg1 from "assets/img/app_package_obj1.png";
 import objectImg2 from "assets/img/app_package_obj2.png";
-import packageImg1 from "assets/img/app_package1.png";
-import packageImg2 from "assets/img/app_package2.png";
-import packageImg3 from "assets/img/app_package3.png";
-import packageImg4 from "assets/img/app_package4.png";
+import packageImg1 from "assets/img/app_package1_2x.png";
+import packageImg2 from "assets/img/app_package2_2x.png";
+import packageImg3 from "assets/img/app_package3_2x.png";
+import packageImg4 from "assets/img/app_package4_2x.png";
 
 function Section3() {
     return (

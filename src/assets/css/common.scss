@@ -376,6 +376,16 @@ button {
                     &.img-title {
                         left: 11.9%;
                         top: 0%;
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 229px;
+                            height: 229px;
+                            position: absolute;
+                            right: calc(100% + 40px);
+                            top: calc(50% - 115px);
+                            background: url("../img/flywheel_mini.png") no-repeat center / contain;
+                        }
                         h3 {
                             color: #3f3f3f;
                             font-size: 18px;
