@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.96908336.css",
-    "main.js": "/static/js/main.1e1c5f9c.js",
+    "main.css": "/static/css/main.9137ebbe.css",
+    "main.js": "/static/js/main.ca2b8e44.js",
     "static/js/453.757a9701.chunk.js": "/static/js/453.757a9701.chunk.js",
     "static/media/PretendardVariable.woff2": "/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
     "static/media/overview.png": "/static/media/overview.02fa8fe7fd89d19d8b36.png",
     "static/media/app_package1_2x.png": "/static/media/app_package1_2x.7da0ae3324668e7c12be.png",
     "static/media/app_package2_2x.png": "/static/media/app_package2_2x.de0b0bf5ff304b4f2ed8.png",
+    "static/media/overview2.png": "/static/media/overview2.e94d4a46f3932099626f.png",
     "static/media/gradient_bubble_bg.png": "/static/media/gradient_bubble_bg.435831aafb6c8dff1fed.png",
     "static/media/main_visual_bg2.png": "/static/media/main_visual_bg2.532c91969f8cbeb507e3.png",
     "static/media/consultation_portal_bg.png": "/static/media/consultation_portal_bg.546069e24ecf499de6fe.png",
@@ -54,12 +55,12 @@
     "static/media/icon_system.png": "/static/media/icon_system.f72185295e34a2919aa6.png",
     "static/media/app_package_obj1.png": "/static/media/app_package_obj1.7e86e62db6b93a80aaef.png",
     "index.html": "/index.html",
-    "main.96908336.css.map": "/static/css/main.96908336.css.map",
-    "main.1e1c5f9c.js.map": "/static/js/main.1e1c5f9c.js.map",
+    "main.9137ebbe.css.map": "/static/css/main.9137ebbe.css.map",
+    "main.ca2b8e44.js.map": "/static/js/main.ca2b8e44.js.map",
     "453.757a9701.chunk.js.map": "/static/js/453.757a9701.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96908336.css",
-    "static/js/main.1e1c5f9c.js"
+    "static/css/main.9137ebbe.css",
+    "static/js/main.ca2b8e44.js"
   ]
 }
