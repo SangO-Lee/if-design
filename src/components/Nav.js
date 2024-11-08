@@ -23,8 +23,7 @@ function Nav() {
 
     const onScrollMenu = (target) => {
         const targetId = target;
-        const targetOffset =
-            document.querySelector(`#${targetId}`).offsetTop - 50;
+        const targetOffset = document.querySelector(`#${targetId}`).offsetTop;
         window.scrollTo(0, targetOffset);
     };
 

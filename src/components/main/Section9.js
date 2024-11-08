@@ -1,16 +1,30 @@
 import menu from "assets/data/menu";
-import React from "react";
 import colorImg from "assets/img/color_system_2x.png";
 import iconImg from "assets/img/icon_system.png";
 import moduleImg from "assets/img/module_system_2x.png";
 import typoImg from "assets/img/typo_system.png";
 import graphicImg from "assets/img/graphic_system.png";
 
+import ScrollProgress from "components/common/ScollProgress";
+import React, { useState } from "react";
+
 function Section9() {
     const targetRef = React.useRef(null);
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
     return (
         <>
-            <section id={menu[8].id} ref={targetRef}>
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section
+                id={menu[8].id}
+                ref={targetRef}
+                className={`${progress > 0.2 ? "active" : ""}`}
+            >
                 <div className="container">
                     <h2 className="section-title">
                         <small>Design Guidelines</small>

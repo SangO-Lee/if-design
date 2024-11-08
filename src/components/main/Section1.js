@@ -1,23 +1,32 @@
 import menu from "assets/data/menu";
 import mockupImg from "assets/img/main_visual_mockup.png";
+import { useEffect, useState } from "react";
 
 function Section1() {
+    const [isActive, setIsActive] = useState(false);
+    useEffect(() => {
+        setTimeout(() => {
+            setIsActive(true);
+        }, 200);
+    }, []);
+
     return (
         <>
-            <section id={menu[0].id}>
+            <section id={menu[0].id} className={`${isActive ? "active" : ""}`}>
                 <div className="main-visual">
                     <img
                         className="mockup"
                         src={mockupImg}
                         alt="main visual mockup"
                     />
+
                     <div className="container">
                         <p className="main-text">
-                            Creverse
-                            <br />
-                            Integrated Academy AI
-                            <br />
-                            Management Service
+                            <span className="line l1">Creverse</span>
+                            <span className="line l2">
+                                Integrated Academy AI
+                            </span>
+                            <span className="line l3">Management Service</span>
                         </p>
                     </div>
                 </div>

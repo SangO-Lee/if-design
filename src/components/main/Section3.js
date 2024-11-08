@@ -1,18 +1,50 @@
 import menu from "assets/data/menu";
-import React from "react";
 import objectImg1 from "assets/img/app_package_obj1.png";
 import objectImg2 from "assets/img/app_package_obj2.png";
 import packageImg1 from "assets/img/app_package1_2x.png";
 import packageImg2 from "assets/img/app_package2_2x.png";
 import packageImg3 from "assets/img/app_package3_2x.png";
 import packageImg4 from "assets/img/app_package4_2x.png";
+import ScrollProgress from "components/common/ScollProgress";
+import React, { useState } from "react";
 
 function Section3() {
+    const targetRef = React.useRef(null);
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
     return (
         <>
-            <section id={menu[2].id}>
-                <img src={objectImg1} alt="오브제1" className="obj1" />
-                <img src={objectImg2} alt="오브제2" className="obj2" />
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section
+                id={menu[2].id}
+                ref={targetRef}
+                className={`${progress > 0 ? "active" : ""}`}
+            >
+                <img
+                    src={objectImg1}
+                    alt="오브제1"
+                    className="obj1"
+                    style={{
+                        transform: `translateY(${
+                            progress * 200 - 120
+                        }px) rotateZ(${progress * 160 - 160}deg)`,
+                    }}
+                />
+                <img
+                    src={objectImg2}
+                    alt="오브제2"
+                    className="obj2"
+                    style={{
+                        transform: `translateY(${
+                            progress * 230 - 180
+                        }px)  rotateZ(${progress * -240 + 240}deg)`,
+                    }}
+                />
                 <div className="container">
                     <div className="card-wrap">
                         <div className="col col-left">

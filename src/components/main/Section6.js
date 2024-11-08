@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import menu from "assets/data/menu";
 import userFlowImg from "assets/img/user_flow.png";
+import ScrollProgress from "components/common/ScollProgress";
 
 function Section6() {
     const targetRef = React.useRef(null);
-
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
     return (
         <>
-            <section id={menu[5].id} ref={targetRef}>
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section
+                id={menu[5].id}
+                ref={targetRef}
+                className={`${progress > 0.2 ? "active" : ""}`}
+            >
                 <div className="container">
                     <div className="title-box">
                         <h2 className="section-title">
@@ -24,7 +36,11 @@ function Section6() {
                             a similar nature.
                         </p>
                     </div>
-                    <img src={userFlowImg} alt="user flow" />
+                    <img
+                        src={userFlowImg}
+                        alt="user flow"
+                        className="user-flow-img"
+                    />
                 </div>
             </section>
         </>

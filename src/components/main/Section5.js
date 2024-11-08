@@ -6,11 +6,27 @@ import teacherScreenImg1 from "assets/img/teacher_app_screen1_2x.png";
 import teacherScreenImg2 from "assets/img/teacher_app_screen2_2x.png";
 import teacherScreenImg3 from "assets/img/teacher_app_screen3_2x.png";
 
+import ScrollProgress from "components/common/ScollProgress";
+import React, { useState } from "react";
+
 function Section5() {
+    const targetRef = React.useRef(null);
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
     return (
         <>
-            <section id={menu[4].id}>
-                <div className="container">
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section
+                id={menu[4].id}
+                ref={targetRef}
+                className={`${progress > 0.3 ? "active" : ""}`}
+            >
+                <div className={`container`}>
                     <div className="title-box">
                         <h2 className="section-title">
                             <small>teacher app</small>

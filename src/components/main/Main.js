@@ -10,7 +10,7 @@ import Section6 from "components/main/Section6";
 import Section7 from "components/main/Section7";
 import Section8 from "components/main/Section8";
 import Section9 from "components/main/Section9";
-import Footer from "components/Footer";
+// import Footer from "components/Footer";
 
 function Main() {
     return (

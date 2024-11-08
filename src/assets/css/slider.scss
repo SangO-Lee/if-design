@@ -1,4 +1,4 @@
-@import "../_font", "../_color";
+@import "./_font", "./_color";
 
 /* Slider Container */
 .slider {
@@ -80,27 +80,65 @@
             justify-content: center;
             align-items: center;
             border-radius: 12px;
-            background: $bg-dark;
+            background-color: $bg-dark;
             transform: translate3d(0, 20px, 0);
             transition: all 0.6s ease;
 
             &.img1 {
-                background: #f06262;
+                background-color: #f06262;
             }
             &.img2 {
-                background: #62b7f0;
+                background-color: #62b7f0;
             }
             &.img3 {
-                background: #f0ae62;
+                background-color: #f0ae62;
             }
             &.img4 {
-                background: #66d46c;
+                background-color: #66d46c;
             }
 
             &.active {
                 z-index: 10;
                 transform: translate3d(0, 0, 0);
                 opacity: 1;
+            }
+        }
+    }
+
+    &.slider2 {
+        position: relative;
+        /* Indicator */
+        .indicator {
+            z-index: 30;
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            transform: translate3d(-50%, 0, 0);
+            width: 200px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: $gray100;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: $primary;
+            transition: width 0.1s linear;
+        }
+        .img-box {
+            .img {
+                transform: translate3d(0, 0, 0);
+                transition: all 1s ease;
+                aspect-ratio: 1920/1080;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed !important;
+                &.active {
+                    z-index: 10;
+                    opacity: 1;
+                    transition: all 3s ease;
+                }
             }
         }
     }

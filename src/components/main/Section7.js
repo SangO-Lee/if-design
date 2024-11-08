@@ -1,10 +1,10 @@
 import menu from "assets/data/menu";
-import ScrollTextReveal from "components/common/ScrollTextReveal";
 import React, { useState } from "react";
 import colorMobileImg from "assets/img/color_mobile.png";
 import colorCompImg1 from "assets/img/color_sample1.png";
 import colorCompImg2 from "assets/img/color_sample2.png";
 import colorCompImg3 from "assets/img/color_sample3.png";
+import ScrollProgress from "components/common/ScollProgress";
 
 function Section7() {
     const targetRef = React.useRef(null);
@@ -14,17 +14,21 @@ function Section7() {
     };
     return (
         <>
-            {/* <ScrollProgress
+            <ScrollProgress
                 targetRef={targetRef}
                 onProgressChange={handleProgressChange}
-            /> */}
+            />
             <section id={menu[6].id} ref={targetRef}>
                 <div className="container">
                     <div className="img-box">
                         <div className="screen">
                             <img src={colorMobileImg} alt="component1" />
                         </div>
-                        <ul className="component-list">
+                        <ul
+                            className={`component-list ${
+                                progress > 0.1 ? "active" : ""
+                            }`}
+                        >
                             <li>
                                 <img src={colorCompImg1} alt="component1" />
                             </li>
@@ -56,7 +60,11 @@ function Section7() {
                             intuitively.
                         </p>
 
-                        <ul className="color-list">
+                        <ul
+                            className={`color-list ${
+                                progress > 0.35 ? "active" : ""
+                            }`}
+                        >
                             <li className="c1">
                                 <span className="name">Coral Blaze</span>
                                 <span className="value">#FF5C5C</span>

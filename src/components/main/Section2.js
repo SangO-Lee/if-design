@@ -7,11 +7,28 @@ import mobileImg2 from "assets/img/mobile_screen2.png";
 import mobileImg3 from "assets/img/mobile_screen3.png";
 import abcImg from "assets/img/abc.png";
 
+import ScrollProgress from "components/common/ScollProgress";
+import React, { useState } from "react";
+
 function Section2() {
+    const targetRef = React.useRef(null);
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
+
     return (
         <>
-            <section id={menu[1].id}>
-                <div className="container">
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section
+                id={menu[1].id}
+                ref={targetRef}
+                className={`${progress > 0 ? "active" : ""}`}
+            >
+                <div className={`container `}>
                     <h2 className="section-title text-center">
                         <small>consultation portal</small>CREVERSE Consultation
                         AI Portal

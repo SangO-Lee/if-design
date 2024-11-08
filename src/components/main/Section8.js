@@ -1,7 +1,21 @@
 import menu from "assets/data/menu";
-import CounterSection from "components/common/CounterSection";
-import ScrollProgress from "components/common/ScollProgress";
+import Slider2 from "components/common/Slider2";
 import React, { useState } from "react";
+import slideImg1 from "assets/img/overview.png";
+import slideImg2 from "assets/img/overview2.png";
+
+const SLIDES = [
+    {
+        index: "1",
+        imgSrc: slideImg1,
+        imgAlt: "overview1",
+    },
+    {
+        index: "2",
+        imgSrc: slideImg2,
+        imgAlt: "overview2",
+    },
+];
 
 function Section8() {
     const targetRef = React.useRef(null);
@@ -20,6 +34,7 @@ function Section8() {
                 {/* <div className="container"> */}
                 {/* <CounterSection progress={progress} /> */}
                 {/* </div> */}
+                <Slider2 slides={SLIDES} />
             </section>
         </>
     );

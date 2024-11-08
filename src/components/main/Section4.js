@@ -1,16 +1,26 @@
 import menu from "assets/data/menu";
-import Swiper from "components/common/Swiper";
-import swiperCards from "assets/data/swiperCards";
 import flywheelImg from "assets/img/flywheel_model_re.png";
+import ScrollProgress from "components/common/ScollProgress";
+import React, { useState } from "react";
 
 function Section4() {
+    const targetRef = React.useRef(null);
+    const [progress, setProgress] = useState(0);
+    const handleProgressChange = (newProgress) => {
+        setProgress(newProgress);
+    };
+
     return (
         <>
-            <section id={menu[3].id}>
+            <ScrollProgress
+                targetRef={targetRef}
+                onProgressChange={handleProgressChange}
+            />
+            <section id={menu[3].id} ref={targetRef}>
                 <div className="container">
                     <h2 className="section-title text-center">
                         <small>FlyWheel Model</small>
-                        Creverse, Nurturing Children's Futures <br />
+                        Creverse, Nurturing Children's Futures <br />
                         with Technology That Prepares for Future
                     </h2>
                     <p className="sub-title">
@@ -30,13 +40,17 @@ function Section4() {
                         beneficiaries all thrive together.
                     </p>
 
-                    <div className="flywheel-wrap">
+                    <div
+                        className={`flywheel-wrap  ${
+                            progress > 0.2 ? "active" : ""
+                        }`}
+                    >
                         <img
                             src={flywheelImg}
                             alt="크레버스 플라이휠"
                             className="flywheel-img center-block"
                         />
-                        <div className="txt-box img-title">
+                        <div className="txt-box img-title active">
                             <h3>Flywheel model</h3>
                             <p>
                                 The flywheel effect means that a business gains
@@ -45,7 +59,22 @@ function Section4() {
                                 resulting in sustainable growth.
                             </p>
                         </div>
-                        <div className="txt-box box1 type1">
+                        <div className={`txt-box box2 type1 text-right`}>
+                            <h3>Consultation AI AGent</h3>
+                            <p>
+                                Provision of AI-based learning analytics data
+                                and consultation guidance
+                            </p>
+                        </div>
+                        <div className={`txt-box box6 type2 text-right`}>
+                            <h3>Headquarters</h3>
+                            <p>
+                                Enhancement of guidance through data collection
+                                and personalized marketing through customer
+                                analysis.
+                            </p>
+                        </div>
+                        <div className={`txt-box box1 type1 `}>
                             <h3>
                                 Integrated Academy AI Management Service USER
                                 ExPERIENCE
@@ -55,30 +84,23 @@ function Section4() {
                                 in academy operation and management services
                             </p>
                         </div>
-                        <div className="txt-box box2 type1 text-right">
-                            <h3>Consultation AI AGent</h3>
-                            <p>
-                                Provision of AI-based learning analytics data
-                                and consultation guidance
-                            </p>
-                        </div>
-                        <div className="txt-box box3 type2">
-                            <h3>PARents</h3>
+                        <div className={`txt-box box3 type2 `}>
+                            <h3>PARENTS</h3>
                             <p>
                                 Review your child's academic information,
                                 including grades, attendance, and learning
                                 achievements, based on data analytics
                             </p>
                         </div>
-                        <div className="txt-box box4 type2">
-                            <h3>StUDENT</h3>
+                        <div className={`txt-box box4 type2 `}>
+                            <h3>STUDENT</h3>
                             <p>
                                 Enhancing academic performance and academy
                                 satisfaction through high-quality academic
                                 feedback
                             </p>
                         </div>
-                        <div className="txt-box box5 type2 text-right">
+                        <div className={`txt-box box5 type2 text-right `}>
                             <h3>Academy</h3>
                             <p>
                                 For counseling teachers, an AI-based platform
@@ -88,16 +110,7 @@ function Section4() {
                                 enhancing work efficiency and service quality
                             </p>
                         </div>
-                        <div className="txt-box box6 type2 text-right">
-                            <h3>Headquarters</h3>
-                            <p>
-                                Enhancement of guidance through data collection
-                                and personalized marketing through customer
-                                analysis.
-                            </p>
-                        </div>
                     </div>
-                    {/* <Swiper cards={swiperCards} /> */}
                 </div>
             </section>
         </>
