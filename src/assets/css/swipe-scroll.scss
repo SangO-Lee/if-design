@@ -1,0 +1,17 @@
+.swipe-container {
+    overflow: auto;
+    white-space: nowrap;
+    cursor: grab;
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
+}
+
+.swipe-container:active {
+    cursor: grabbing;
+}
+
+.swipe-content > * {
+    display: inline-block;
+    margin-right: 10px;
+}

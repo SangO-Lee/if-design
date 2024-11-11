@@ -7,6 +7,7 @@ import graphicImg from "assets/img/graphic_system.png";
 
 import ScrollProgress from "components/common/ScollProgress";
 import React, { useState } from "react";
+import SwipeScroll from "components/common/SwipeScroll";
 
 function Section9() {
     const targetRef = React.useRef(null);
@@ -55,10 +56,12 @@ function Section9() {
                                 <div className="g-color-wrap">
                                     <h3>Graphic color</h3>
                                     <div className="g-color-img">
-                                        <img
-                                            src={graphicImg}
-                                            alt="grade components"
-                                        />
+                                        <SwipeScroll>
+                                            <img
+                                                src={graphicImg}
+                                                alt="grade components"
+                                            />
+                                        </SwipeScroll>
                                     </div>
                                 </div>
                             </div>
