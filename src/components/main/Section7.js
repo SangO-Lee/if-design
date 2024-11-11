@@ -1,6 +1,6 @@
 import menu from "assets/data/menu";
 import React, { useState } from "react";
-import colorMobileImg from "assets/img/color_mobile.png";
+import colorMobileImg from "assets/img/color_mobile_2x.png";
 import colorCompImg1 from "assets/img/color_sample1.png";
 import colorCompImg2 from "assets/img/color_sample2.png";
 import colorCompImg3 from "assets/img/color_sample3.png";
