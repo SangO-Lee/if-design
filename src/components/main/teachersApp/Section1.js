@@ -22,17 +22,26 @@ function Section1() {
 
                     <div className="container">
                         <p className="main-text">
-                            CREVERSE <br />
-                            Teacher’s <br />
-                            Assistant App
+                            CREVERSE AI Academy <br />
+                            Integrated <br />
+                            Management Service <br />_ Teacher’s App
                         </p>
                         <p className="sub-text">
-                            As the era of artificial intelligence (AI) unfolds,
-                            we have developed this service to enhance the
-                            overall quality of academy management by
-                            transitioning traditional offline-focused operations
-                            to a digital platform and integrating AI
-                            technologies.
+                            The Teacher’s App, a key component of CREVERSE’s
+                            AI-powered Academy Integrated Management Service, is
+                            designed to help instructors manage their classes
+                            more efficiently.
+                            <br />
+                            Its core features include attendance and grade
+                            management, allowing teachers to easily record and
+                            monitor students’ attendance and academic
+                            performance.
+                            <br />
+                            With a user-friendly and intuitive UI, the app
+                            enhances the overall educational experience by
+                            streamlining student and class management,
+                            empowering instructors to focus on effective
+                            teaching.
                         </p>
                     </div>
                 </div>

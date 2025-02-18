@@ -47,18 +47,20 @@ function Section2() {
                 <div className={`container `}>
                     <div className="title-box">
                         <h2 className="section-title">
-                            <small>teacher app</small>
-                            Teacher’s Assistant App
+                            Real-Time Integration Between <br />
+                            TEachers and the Academy System
                         </h2>
                         <p className="sub-title">
-                            Teacher’s Assistant App is designed to assist
-                            educators in managing their classes more
-                            efficiently. Its primary features include attendance
-                            and grade management, enabling instructors to easily
-                            record and monitor students' attendance and academic
-                            performance. This streamlined approach enhances the
-                            overall teaching experience by simplifying
-                            administrative tasks.
+                            With the Teacher’s App, instructors can conveniently
+                            manage attendance and grades on their mobile
+                            devices. Student data is updated in real time and
+                            seamlessly shared across teachers, academy
+                            administrators, and the academy system. Instructors
+                            can efficiently manage multiple students while also
+                            quickly identifying the status of individual
+                            students at a glance. Additionally, they can
+                            retrieve past records with ease, enabling more
+                            effective and streamlined academic management.
                         </p>
                     </div>
 

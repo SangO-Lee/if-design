@@ -28,19 +28,21 @@ function Section3() {
                 <div className="container">
                     <div className="title-box">
                         <h2 className="section-title">
-                            <small>teacher app</small>
-                            Teacher’s Assistant App <br />
-                            Key Features
+                            Key Features of <br />
+                            the Teacher’s App
                         </h2>
                         <p className="sub-title">
-                            Teacher’s Assistant App is designed to assist
-                            educators in managing their classes more
-                            efficiently. Its primary features include attendance
-                            and grade management, enabling instructors to easily
-                            record and monitor students' attendance and academic
-                            performance. This streamlined approach enhances the
-                            overall teaching experience by simplifying
-                            administrative tasks.
+                            The Teacher’s App offers instructors essential
+                            support features beyond attendance and grade
+                            management, all within an intuitive interface.{" "}
+                            <br />
+                            With the Daily Class Schedule Management feature,
+                            teachers can easily track class progress and
+                            efficiently manage makeup lessons for absent
+                            students.
+                            <br /> Its easy accessibility ensures that
+                            instructors can focus more on guiding their students
+                            without distractions.
                         </p>
                     </div>
                     <div className="teacher-wrap">
@@ -72,14 +74,14 @@ function Section3() {
                                     alt="icon"
                                     className="icon"
                                 />
-                                Attendance Management
+                                Makeup Lesson Management
                             </h3>
                             <p>
-                                Instructors can check and record the number of
-                                students and their attendance status for each
-                                class. This functionality streamlines attendance
-                                management, contributing to an efficient
-                                learning environment.
+                                Students who miss a class can easily schedule
+                                makeup lessons through the Makeup Lesson
+                                Management feature. The Teacher’s App is
+                                systematically designed to ensure that all
+                                students can stay on track with the curriculum.
                             </p>
                             <img
                                 src={teacherScreenImg2}

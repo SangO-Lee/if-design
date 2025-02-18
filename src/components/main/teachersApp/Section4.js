@@ -25,19 +25,20 @@ function Section4() {
                 <div className="container">
                     <div className="title-box">
                         <h2 className="section-title">
-                            <small>teacher app</small>
-                            Teacher’s Assistant App <br />
-                            Key Features
+                            Standardization of <br />
+                            Component Design
                         </h2>
                         <p className="sub-title">
-                            Teacher’s Assistant App is designed to assist
-                            educators in managing their classNamees more
-                            efficiently. Its primary features include attendance
-                            and grade management, enabling instructors to easily
-                            record and monitor students' attendance and academic
-                            performance. This streamlined approach enhances the
-                            overall teaching experience by simplifying
-                            administrative tasks.
+                            By implementing Standardized Component Design, the
+                            Teacher’s App ensures a cohesive visual identity
+                            while allowing for dynamic data representation
+                            aligned with each learning brand’s unique
+                            guidelines. The responsive data table UI is
+                            optimized for various device environments and user
+                            contexts, providing seamless access and intuitive
+                            interaction, enabling instructors to efficiently
+                            navigate and retrieve learning data anytime,
+                            anywhere.
                         </p>
                     </div>
                     <div className=" ta-component-wrap">

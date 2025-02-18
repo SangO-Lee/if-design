@@ -3,6 +3,9 @@
 @import "assets/fonts/DMSans.css";
 
 #main #teachers-app {
+    .section-title {
+        @include heading2;
+    }
     #section1 {
         .main-visual {
             background: url(../img/teachers_app/ta_main_visual.png) no-repeat center / cover;
@@ -11,6 +14,7 @@
             .main-text {
                 margin-top: 0;
                 @include text-gradient;
+                @include heading1;
             }
             .sub-text {
                 opacity: 1;
@@ -28,7 +32,7 @@
                 z-index: 100;
                 position: absolute;
                 left: 50%;
-                top: 45%;
+                top: 50%;
                 transform: translate(-50%, -50%);
             }
         }
