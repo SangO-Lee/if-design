@@ -13,6 +13,10 @@
         .section-title {
             @include heading1;
         }
+        .fluid img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     #section2 {
         background: url(../img/consultation_portal/cp_section2_bg.png) no-repeat center top / cover;

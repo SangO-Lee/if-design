@@ -1,4 +1,4 @@
-import consultationImg from "assets/img/consultation_portal_old.png";
+import consultationImg from "assets/img/consultation_portal/cp_main_old.png";
 
 import { useEffect, useState } from "react";
 
@@ -33,6 +33,8 @@ function Section1() {
                         the academies, enabling AI-driven unified search for all
                         information necessary for consultations.
                     </p>
+                </div>
+                <div class="container fluid">
                     <img
                         src={consultationImg}
                         alt="consultation portal"

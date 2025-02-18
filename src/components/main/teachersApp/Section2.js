@@ -45,22 +45,24 @@ function Section2() {
                     }}
                 />
                 <div className={`container `}>
-                    <div className="title-box">
-                        <h2 className="section-title">
-                            Real-Time Integration Between <br />
-                            TEachers and the Academy System
+                    <div className="">
+                        <h2 className="section-title text-center">
+                            Real-Time Integration Between TEachers and the
+                            Academy System
                         </h2>
-                        <p className="sub-title">
+                        <p className="sub-title text-center">
                             With the Teacher’s App, instructors can conveniently
                             manage attendance and grades on their mobile
-                            devices. Student data is updated in real time and
+                            devices.
+                            <br /> Student data is updated in real time and
                             seamlessly shared across teachers, academy
-                            administrators, and the academy system. Instructors
-                            can efficiently manage multiple students while also
-                            quickly identifying the status of individual
-                            students at a glance. Additionally, they can
-                            retrieve past records with ease, enabling more
-                            effective and streamlined academic management.
+                            administrators, and the academy system.
+                            <br /> Instructors can efficiently manage multiple
+                            students while also quickly identifying the status
+                            of individual students at a glance.
+                            <br /> Additionally, they can retrieve past records
+                            with ease, enabling more effective and streamlined
+                            academic management.
                         </p>
                     </div>
 

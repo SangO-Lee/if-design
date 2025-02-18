@@ -1,5 +1,5 @@
 import menu from "assets/data/menu";
-import taMockupImg from "assets/img/teachers_app/ta_mockup.png";
+import taMockupImg from "assets/img/teachers_app/ta_mockup_old.png";
 import { useEffect, useState } from "react";
 
 function Section1() {

@@ -1,5 +1,5 @@
 import menu from "assets/data/menu";
-import mockupImg from "assets/img/main_visual_mockup.png";
+import mockupImg from "assets/img/main_visual_mockup_old.png";
 import { useEffect, useState } from "react";
 
 function Section1() {
