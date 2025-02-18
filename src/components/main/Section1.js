@@ -28,6 +28,14 @@ function Section1() {
                             </span>
                             <span className="line l3">Management Service</span>
                         </p>
+                        <p className="sub-text">
+                            As the era of artificial intelligence (AI) unfolds,
+                            we have developed this service to enhance the
+                            overall quality of academy management by
+                            transitioning traditional offline-focused operations
+                            to a digital platform and integrating AI
+                            technologies.
+                        </p>
                     </div>
                 </div>
                 <div className="main-quote">

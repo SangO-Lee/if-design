@@ -76,8 +76,9 @@ function Section4() {
                         </div>
                         <div className={`txt-box box1 type1 `}>
                             <h3>
-                                Integrated Academy AI Management Service USER
-                                ExPERIENCE
+                                Integrated Academy <br />
+                                AI Management Service <br />
+                                USER ExPERIENCE
                             </h3>
                             <p>
                                 Maintain consistent and high-quality standards

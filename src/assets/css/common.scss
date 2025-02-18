@@ -95,6 +95,7 @@ button {
                     z-index: 10;
                     position: relative;
                     margin-top: 162px;
+                    margin-bottom: 40px;
                     @include hero;
                     color: #fff;
 
@@ -116,13 +117,22 @@ button {
                         transition-delay: 0.3s;
                     }
                 }
+                .sub-text {
+                    opacity: 0;
+                    width: 500px;
+                    max-width: 100%;
+                    padding-top: 1.3em;
+                    @include body2;
+                    color: #fff;
+                    transition: all 1s ease 0.5s;
+                }
 
                 .mockup {
                     z-index: 10;
                     position: absolute;
-                    right: 11%;
-                    bottom: -51%;
-                    width: 42.5%;
+                    right: 16.3%;
+                    bottom: -45%;
+                    width: 38.4%;
                     opacity: 0;
                     transform: translate3d(0, 30px, 0);
                     transition: all 1s ease;
@@ -131,7 +141,7 @@ button {
             .main-quote {
                 position: relative;
                 display: flex;
-                padding: 44px 0 42px;
+                padding: 60px 0 130px;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -173,15 +183,19 @@ button {
                             padding-top: 0;
                         }
                     }
+                    .sub-text {
+                        opacity: 1;
+                        padding-top: 0;
+                    }
                 }
             }
         }
 
         //section2
         #section2 {
-            padding: 0;
+            // padding: 0;
             aspect-ratio: 1920 / 1080;
-            background: url("../img/consultation_portal_bg.png") no-repeat center / contain;
+            background: url("../img/consultation_portal_bg.png") no-repeat center bottom / cover;
             &.active {
                 .section-title,
                 .sub-title {
@@ -192,7 +206,6 @@ button {
 
             .section-title {
                 opacity: 0;
-                padding-top: 6.4dvh;
                 @include text-gradient;
                 transform: translate3d(0, 10px, 0);
                 transition: all 0.6s ease;
@@ -287,7 +300,6 @@ button {
         //section3
         #section3 {
             position: relative;
-            padding-top: 80px;
             min-height: 0;
             background: url("../img/app_package_bg.png") no-repeat center / cover;
             .obj1,
@@ -340,6 +352,19 @@ button {
                         object-fit: cover;
                         transition: all 0.6s ease;
                     }
+                    .card-title {
+                        position: absolute;
+                        left: 34px;
+                        top: 34px;
+                        @include heading2;
+                        color: #fff;
+                    }
+                    &.item4 {
+                        .card-title {
+                            top: auto;
+                            bottom: 34px;
+                        }
+                    }
                     .txt-box {
                         opacity: 0;
                         transform: rotate3d(0, 0.5, 0, 180deg);
@@ -349,12 +374,12 @@ button {
                         top: 0;
                         width: 100%;
                         height: 100%;
-                        padding: 40px;
+                        padding: 34px;
                         border-radius: 40px;
                         transition: all 0.6s ease;
                         h3 {
                             margin-bottom: 20px;
-                            @include sub-title;
+                            @include heading2;
                         }
                         p {
                             @include body2;
@@ -423,6 +448,9 @@ button {
             //         top: 160px;
             //     }
             // }
+            .section-title.text-center + .sub-title {
+                margin-bottom: 134px;
+            }
             .flywheel-wrap {
                 position: relative;
                 aspect-ratio: 1507/685;
@@ -490,8 +518,8 @@ button {
                         }
                     }
                     &.img-title {
-                        left: 11.9%;
-                        top: 0%;
+                        left: 21%;
+                        top: -5%;
                         opacity: 1;
                         transform: translate3d(0, 0, 0);
 
@@ -501,7 +529,7 @@ button {
                             width: 229px;
                             height: 229px;
                             position: absolute;
-                            right: calc(100% + 40px);
+                            right: calc(100% + 20px);
                             top: calc(50% - 115px);
                             background: url("../img/flywheel_mini.png") no-repeat center / contain;
                         }
@@ -541,34 +569,34 @@ button {
                     }
 
                     &.box1 {
-                        width: 290px;
-                        left: 78.7%;
-                        top: 6.8%;
+                        width: 300px;
+                        left: 75.7%;
+                        top: 0;
                     }
                     &.box2 {
                         width: 290px;
-                        left: 0.4%;
+                        left: -0.3%;
                         top: 50%;
                     }
                     &.box3 {
-                        width: 250px;
-                        left: 81.5%;
-                        top: 44.8%;
+                        width: 280px;
+                        left: 78.3%;
+                        top: 41%;
                     }
                     &.box4 {
-                        width: 250px;
-                        left: 74%;
-                        top: 75.1%;
+                        width: 280px;
+                        left: 70.5%;
+                        top: 76.1%;
                     }
                     &.box5 {
                         width: 350px;
-                        left: 0%;
-                        top: 74.6%;
+                        left: -0.2%;
+                        top: 72.6%;
                     }
                     &.box6 {
-                        width: 390px;
-                        left: 3.8%;
-                        top: 26.7%;
+                        width: 283px;
+                        left: 5.8%;
+                        top: 23%;
                     }
                 }
             }
@@ -578,6 +606,15 @@ button {
         #section5 {
             background: url(../img/teacher_app_bg.png) no-repeat center bottom / cover;
             background-attachment: fixed;
+            .title-box {
+                .section-title {
+                    flex: 1;
+                }
+                .sub-title {
+                    flex-basis: 780px;
+                    min-width: 780px;
+                }
+            }
 
             &.active {
                 .teacher-wrap {
@@ -599,34 +636,35 @@ button {
                 .item {
                     flex: 1;
                     position: relative;
-                    aspect-ratio: 518 / 671;
+                    aspect-ratio: 405 / 704;
                     padding: 40px;
                     display: flex;
                     flex-flow: column;
                     overflow: hidden;
+                    border-radius: 40px;
 
                     &.item1 {
-                        background: url(../img/teacher_app_bg1.png) no-repeat center / contain;
+                        background: #ecf9fd url(../img/teacher_app_bg1.png) no-repeat center / contain;
                     }
                     &.item2 {
                         justify-content: flex-end;
-                        background: url(../img/teacher_app_bg2.png) no-repeat center / contain;
+                        background: #eefaf4 url(../img/teacher_app_bg2.png) no-repeat center / contain;
 
                         .screen {
                             bottom: auto;
-                            top: -40%;
+                            top: -26%;
                         }
                     }
                     &.item3 {
-                        background: url(../img/teacher_app_bg3.png) no-repeat center / contain;
+                        background: #fffbf0 url(../img/teacher_app_bg3.png) no-repeat center / contain;
                     }
 
                     .screen {
                         position: absolute;
-                        width: 61.7%;
+                        width: 77%;
                         left: 50%;
                         transform: translate3d(-50%, 0, 0);
-                        bottom: -36%;
+                        bottom: -26%;
                     }
                 }
                 h3 {
@@ -748,7 +786,7 @@ button {
         //section7
         #section7 {
             padding: 0;
-            min-height: calc(130px + 100dvh);
+            min-height: calc(260px + 100dvh);
             overflow: hidden;
             background: url("../img/color_bg.png") no-repeat center / cover;
 
@@ -768,7 +806,9 @@ button {
                         left: 20px;
                         img {
                             // width: 528px;
-                            height: 100dvh;
+                            aspect-ratio: 408/840;
+                            height: 840px;
+                            filter: drop-shadow(12px 12px 16px rgba(0, 0, 0, 0.16));
                         }
                     }
                     .sub-content {
@@ -780,7 +820,7 @@ button {
                     .component-list {
                         display: flex;
                         gap: 16px;
-                        width: 1170px;
+                        width: 926px;
 
                         li {
                             transition: all 0.6s ease;
@@ -809,7 +849,7 @@ button {
                     position: absolute;
                     right: 0;
                     padding-top: 64px;
-                    width: 840px;
+                    width: 685px;
                     max-width: 100%;
 
                     p {
@@ -820,7 +860,7 @@ button {
 
                     .color-list {
                         display: flex;
-                        gap: 12px;
+                        gap: 28px;
                         perspective: 2000px;
 
                         &.active {
@@ -944,30 +984,29 @@ button {
                 }
                 .row {
                     display: flex;
-                    align-items: flex-start;
-                    gap: 56px;
+                    align-items: stretch;
+                    gap: 32px;
                     > div {
                         overflow: hidden;
                     }
                 }
                 .color-wrap {
-                    flex-basis: 71%;
+                    flex-basis: 73.8%;
                 }
                 .icon-wrap {
-                    flex-basis: 29%;
+                    flex-basis: 33%;
                 }
                 .module-color-wrap {
-                    flex-basis: 53%;
+                    flex-basis: 56.8%;
                 }
                 .typo-graphic {
-                    flex-basis: 47%;
+                    flex-basis: 43.2%;
                     display: flex;
                     flex-flow: column;
-                    gap: 53px;
                     justify-content: space-between;
                 }
                 .g-color-wrap {
-                    width: 630px;
+                    width: 100%;
                     .g-color-img {
                         position: relative;
                         overflow-x: auto;

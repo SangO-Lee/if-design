@@ -6,6 +6,7 @@ import mobileImg1 from "assets/img/mobile_screen1.png";
 import mobileImg2 from "assets/img/mobile_screen2.png";
 import mobileImg3 from "assets/img/mobile_screen3.png";
 import abcImg from "assets/img/abc.png";
+import consultationImg from "assets/img/consultation_portal.png";
 
 import ScrollProgress from "components/common/ScollProgress";
 import React, { useState } from "react";
@@ -47,6 +48,11 @@ function Section2() {
                         the academies, enabling AI-driven unified search for all
                         information necessary for consultations
                     </p>
+                    <img
+                        src={consultationImg}
+                        alt="consultation portal"
+                        className="consultation-img"
+                    />
                 </div>
                 {/* <img src={abcImg} alt="abc" className="abc-img" />
                 <div className="mobile-screens">

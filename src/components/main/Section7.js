@@ -19,7 +19,7 @@ function Section7() {
                 onProgressChange={handleProgressChange}
             />
             <section id={menu[6].id} ref={targetRef}>
-                <div className="container">
+                <div className="container narrow">
                     <div className="img-box">
                         <div className="screen">
                             <img src={colorMobileImg} alt="component1" />

@@ -24,7 +24,8 @@ function Section6() {
                     <div className="title-box">
                         <h2 className="section-title">
                             <small>user flow</small>
-                            Key Features User Flow and Data Integration
+                            Key Features User Flow and <br />
+                            Data Integration
                         </h2>
                         <p className="sub-title">
                             A key feature of CREVERSE academy management is that

@@ -3,9 +3,11 @@ import logoImgWhite from "assets/img/logo_white.png";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";
 import menu from "assets/data/menu";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
     const scrollPosition = useScrollPosition();
+    const navigate = useNavigate();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
     const [logoSrc, setLogoSrc] = useState(logoImgWhite);
@@ -21,10 +23,15 @@ function Nav() {
         menu[7], // Overview
     ];
 
+    //클릭시 해당 위치로 스크롤 이동되는 기능
     const onScrollMenu = (target) => {
         const targetId = target;
         const targetOffset = document.querySelector(`#${targetId}`).offsetTop;
         window.scrollTo(0, targetOffset);
+    };
+
+    const onMoveTo = (targetUrl) => {
+        navigate(targetUrl);
     };
 
     useEffect(() => {
@@ -72,7 +79,7 @@ function Nav() {
                             >
                                 <button
                                     onClick={() => {
-                                        onScrollMenu(menu.id);
+                                        onMoveTo(menu.url);
                                     }}
                                 >
                                     {menu.name}

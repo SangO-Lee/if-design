@@ -1,6 +1,6 @@
 import menu from "assets/data/menu";
 import colorImg from "assets/img/color_system_2x.png";
-import iconImg from "assets/img/icon_system.png";
+import iconImg from "assets/img/icon_system_2x.png";
 import moduleImg from "assets/img/module_system_2x.png";
 import typoImg from "assets/img/typo_system.png";
 import graphicImg from "assets/img/graphic_system.png";
@@ -26,7 +26,7 @@ function Section9() {
                 ref={targetRef}
                 className={`${progress > 0.2 ? "active" : ""}`}
             >
-                <div className="container">
+                <div className="container narrow">
                     <h2 className="section-title">
                         <small>Design Guidelines</small>
                         DESIGN Style Guidelines
