@@ -1,39 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <meta charset="utf-8" />
-        <title>Single Page Apps for GitHub Pages</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirecting...</title>
         <script type="text/javascript">
-            var segmentCount = 1;
-            var l = window.location;
-
-            // ✅ URL이 이미 변환된 상태이거나, 루트 경로라면 변경하지 않음
-            if (!l.search.includes("p=") && l.pathname !== "/") {
-                l.replace(
+            // 현재 URL에서 pathname과 search를 가져와서 index.html로 리디렉트
+            (function () {
+                var l = window.location;
+                var redirectUrl =
                     l.protocol +
-                        "//" +
-                        l.hostname +
-                        (l.port ? ":" + l.port : "") +
-                        l.pathname
-                            .split("/")
-                            .slice(0, 1 + segmentCount)
-                            .join("/") +
-                        (l.pathname === "/"
-                            ? ""
-                            : "/?p=" +
-                              l.pathname
-                                  .slice(1)
-                                  .split("/")
-                                  .slice(segmentCount)
-                                  .join("/")
-                                  .replace(/&/g, "~and~")) +
-                        (l.search
-                            ? "&q=" + l.search.slice(1).replace(/&/g, "~and~")
-                            : "") +
-                        l.hash
-                );
-            }
+                    "//" +
+                    l.host +
+                    "/?" +
+                    "p=" +
+                    l.pathname +
+                    l.search +
+                    l.hash;
+                window.location.replace(redirectUrl);
+            })();
         </script>
     </head>
-    <body></body>
+    <body>
+        <h1>페이지를 찾을 수 없습니다. Redirecting...</h1>
+        <p>잠시만 기다려 주세요.</p>
+    </body>
 </html>
