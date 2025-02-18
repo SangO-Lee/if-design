@@ -4,11 +4,11 @@
         <meta charset="utf-8" />
         <title>Single Page Apps for GitHub Pages</title>
         <script type="text/javascript">
-            var segmentCount = 1; // GitHub Pages에서 프로젝트 폴더 사용 시 1, Custom Domain 사용 시 0
+            var segmentCount = 1;
             var l = window.location;
 
-            // ✅ URL이 이미 변환된 상태라면 다시 변경하지 않도록 체크
-            if (!l.search.includes("p=") && !l.search.includes("q=")) {
+            // ✅ URL이 이미 변환된 상태이거나, 루트 경로라면 변경하지 않음
+            if (!l.search.includes("p=") && l.pathname !== "/") {
                 l.replace(
                     l.protocol +
                         "//" +
@@ -18,13 +18,15 @@
                             .split("/")
                             .slice(0, 1 + segmentCount)
                             .join("/") +
-                        "/?p=/" +
-                        l.pathname
-                            .slice(1)
-                            .split("/")
-                            .slice(segmentCount)
-                            .join("/")
-                            .replace(/&/g, "~and~") +
+                        (l.pathname === "/"
+                            ? ""
+                            : "/?p=" +
+                              l.pathname
+                                  .slice(1)
+                                  .split("/")
+                                  .slice(segmentCount)
+                                  .join("/")
+                                  .replace(/&/g, "~and~")) +
                         (l.search
                             ? "&q=" + l.search.slice(1).replace(/&/g, "~and~")
                             : "") +
