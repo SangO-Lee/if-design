@@ -2,7 +2,7 @@ const menu = [
     {
         index: 1,
         id: "section1",
-        name: "Main",
+        name: "Service Introduction",
         visible: true,
         url: "/",
     },

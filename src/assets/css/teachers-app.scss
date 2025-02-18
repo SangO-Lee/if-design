@@ -1,0 +1,260 @@
+@import "./_layout", "./_color", "./_font";
+@import "assets/fonts/pretendardvariable.css";
+@import "assets/fonts/DMSans.css";
+
+#main #teachers-app {
+    #section1 {
+        .main-visual {
+            background: url(../img/teachers_app/ta_main_visual.png) no-repeat center / cover;
+            aspect-ratio: 1920 / 930;
+
+            .main-text {
+                margin-top: 0;
+                @include text-gradient;
+            }
+            .sub-text {
+                @include body2;
+                color: $gray900;
+            }
+            .mockup {
+                width: 33%;
+                right: 17%;
+                bottom: 44%;
+                transform: translateY(50%);
+            }
+            .container {
+                z-index: 100;
+                position: absolute;
+                left: 50%;
+                top: 45%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    #section2 {
+        position: relative;
+        background: url(../img/teachers_app/ta_section2_bg.png) no-repeat center top / cover;
+        background-attachment: fixed;
+        .section-title,
+        .sub-title {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        .obj1,
+        .obj2 {
+            z-index: 10;
+            position: absolute;
+        }
+        .obj1 {
+            left: 10%;
+            top: 60%;
+            width: 7.4dvw;
+        }
+        .obj2 {
+            right: 14%;
+            bottom: -4%;
+            width: 8.7dvw;
+        }
+
+        .teacher-wrap {
+            display: flex;
+            gap: 32px;
+            .item {
+                flex: 1;
+                position: relative;
+                aspect-ratio: 624 / 704;
+                padding: 60px 32px;
+                display: flex;
+                flex-flow: column;
+                overflow: hidden;
+                border-radius: 40px;
+
+                &.item1 {
+                    background: #ecf9fd url(../img/teachers_app/ta_trait_bg1_2x.png) no-repeat center / contain;
+                }
+                &.item2 {
+                    background: #eefaf4 url(../img/teachers_app/ta_trait_bg2_2x.png) no-repeat center / contain;
+                }
+            }
+            h3 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 12px;
+                @include sub-title;
+                color: $black;
+
+                line-height: 32px;
+                height: 32px;
+                overflow: hidden;
+                align-items: flex-start;
+                padding-top: 32px;
+                transition: all 0.6s ease;
+
+                // .icon {
+                //     position: absolute;
+                //     right: 100%;
+                //     top: -2px;
+                //     margin-right: 8px;
+                // }
+            }
+            p {
+                @include body2;
+                color: $gray900;
+                opacity: 0;
+                transform: translate3d(0, 30px, 0);
+                transition: all 0.6s ease 0.1s;
+            }
+        }
+        &.active {
+            .teacher-wrap {
+                .item {
+                    h3 {
+                        padding-top: 0;
+                    }
+                    p {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    #section3 {
+        background: url(../img/teachers_app/ta_section3_bg.png) no-repeat center top / cover;
+        &.active {
+            .teacher-wrap {
+                .item {
+                    h3 {
+                        padding-top: 0;
+                    }
+                    p {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .teacher-wrap {
+            display: flex;
+            gap: 32px;
+            .item {
+                flex: 1;
+                position: relative;
+                aspect-ratio: 405 / 704;
+                padding: 40px;
+                display: flex;
+                flex-flow: column;
+                overflow: hidden;
+                border-radius: 40px;
+
+                &.item1 {
+                    background: #ecf9fd url(../img/teacher_app_bg1.png) no-repeat center / contain;
+                }
+                &.item2 {
+                    justify-content: flex-end;
+                    background: #eefaf4 url(../img/teacher_app_bg2.png) no-repeat center / contain;
+
+                    .screen {
+                        bottom: auto;
+                        top: -26%;
+                    }
+                }
+                &.item3 {
+                    background: #fffbf0 url(../img/teacher_app_bg3.png) no-repeat center / contain;
+                }
+
+                .screen {
+                    position: absolute;
+                    width: 77%;
+                    left: 50%;
+                    transform: translate3d(-50%, 0, 0);
+                    bottom: -26%;
+                }
+            }
+            h3 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 12px;
+                @include sub-title;
+                color: $black;
+
+                line-height: 32px;
+                height: 32px;
+                overflow: hidden;
+                align-items: flex-start;
+                padding-top: 32px;
+                transition: all 0.6s ease;
+
+                // .icon {
+                //     position: absolute;
+                //     right: 100%;
+                //     top: -2px;
+                //     margin-right: 8px;
+                // }
+            }
+            p {
+                @include body2;
+                color: $gray900;
+                opacity: 0;
+                transform: translate3d(0, 30px, 0);
+                transition: all 0.6s ease 0.1s;
+            }
+        }
+    }
+    #section4 {
+        min-height: 100vh;
+        background: none;
+
+        .ta-component-wrap {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            &::before {
+                content: "";
+                z-index: -1;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                width: 27dvw;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                background: #b5db81;
+            }
+
+            img {
+                filter: drop-shadow(0px 22px 18px rgba(0, 0, 0, 0.16));
+            }
+
+            .item {
+                opacity: 0;
+                transform: translate3d(0, 20px, 0);
+                transition: all 0.6s ease;
+                &.item1 {
+                    transition-delay: 0.2s;
+                }
+                &.item2 {
+                    transition-delay: 0.4s;
+                }
+                &.item3 {
+                    transition-delay: 0.6s;
+                }
+            }
+        }
+        &.active {
+            .ta-component-wrap .item {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+    #section5 {
+        padding: 0;
+    }
+}
