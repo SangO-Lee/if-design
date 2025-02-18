@@ -10,7 +10,7 @@ function Nav() {
     const navigate = useNavigate();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
-    const [logoSrc, setLogoSrc] = useState(logoImgWhite);
+    const [logoSrc, setLogoSrc] = useState(logoImg);
 
     // 원하는 순서로 재정렬된 메뉴 항목
     const customOrderMenu = [
@@ -34,21 +34,21 @@ function Nav() {
         navigate(targetUrl);
     };
 
-    useEffect(() => {
-        if (scrollPosition !== 0) {
-            setLogoSrc(logoImg);
-        } else {
-            setLogoSrc(logoImgWhite);
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (scrollPosition !== 0) {
+    //         setLogoSrc(logoImg);
+    //     } else {
+    //         setLogoSrc(logoImgWhite);
+    //     }
+    // }, []);
 
     useEffect(() => {
         if (scrollPosition !== 0) {
             setIsNavScrolling(true);
-            setLogoSrc(logoImg);
+            // setLogoSrc(logoImg);
         } else {
             setIsNavScrolling(false);
-            setLogoSrc(logoImgWhite);
+            // setLogoSrc(logoImgWhite);
         }
     }, [scrollPosition]);
 

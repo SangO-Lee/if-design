@@ -59,3 +59,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@mixin ai-gradient {
+    background: var(--text1, linear-gradient(270deg, #b1bdff -100%, #6348ff 120%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,104 @@
+@import "./_layout", "./_color", "./_font";
+@import "assets/fonts/pretendardvariable.css";
+@import "assets/fonts/DMSans.css";
+
+#main #consultation-portal {
+    .section-title {
+        @include heading2;
+    }
+    #section1 {
+        padding: 130px 0;
+        background: url(../img/consultation_portal/cp_section1_bg.png) no-repeat center top / cover;
+
+        .section-title {
+            @include heading1;
+        }
+    }
+    #section2 {
+        background: url(../img/consultation_portal/cp_section2_bg.png) no-repeat center top / cover;
+
+        .container {
+            position: relative;
+            .txt-box {
+                position: absolute;
+                left: 20px;
+                top: 0;
+                width: 320px;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+    #section3 {
+        background: url(../img/consultation_portal/cp_section3_bg.png) no-repeat center top / cover;
+
+        .txt-box {
+            width: 973px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .img-box {
+            position: relative;
+            .icon-img {
+                position: absolute;
+                right: -6%;
+                bottom: 0;
+            }
+        }
+    }
+    #section4 {
+        aspect-ratio: 1920 / 1030;
+        background: url(../img/consultation_portal/cp_section4_bg.png) no-repeat center top / cover;
+        .sub-title {
+            margin-left: auto;
+            margin-right: auto;
+            width: 750px;
+            max-width: 100%;
+        }
+        .section-title.text-center + .sub-title {
+            margin-bottom: 52px;
+        }
+        .outbound-img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    #section5 {
+        background: url(../img/consultation_portal/cp_section5_bg.png) no-repeat center top / cover;
+
+        .container {
+            position: relative;
+            .txt-box {
+                position: absolute;
+                left: 20px;
+                top: 0;
+                width: 424px;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+    #section6 {
+        background: url(../img/consultation_portal/cp_section6_bg.png) no-repeat center top / cover;
+
+        .section-title {
+            @include ai-gradient;
+            img {
+                display: block;
+                margin: 0 auto 12px;
+            }
+        }
+        .ai-img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    #section7 {
+        min-height: 0;
+        padding: 0;
+    }
+}

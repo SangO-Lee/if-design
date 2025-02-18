@@ -13,6 +13,8 @@
                 @include text-gradient;
             }
             .sub-text {
+                opacity: 1;
+                padding-top: 0;
                 @include body2;
                 color: $gray900;
             }
