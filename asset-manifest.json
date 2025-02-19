@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cbacebd.css",
-    "main.js": "/static/js/main.cdbfad6e.js",
+    "main.css": "/static/css/main.099bcc7f.css",
+    "main.js": "/static/js/main.45ff083b.js",
     "static/js/453.9e1efd20.chunk.js": "/static/js/453.9e1efd20.chunk.js",
     "static/media/overview_4x.png": "/static/media/overview_4x.38035c4343034612bdc2.png",
     "static/media/overview_2x.png": "/static/media/overview_2x.629ad1e90b51ac2b41b7.png",
@@ -33,6 +33,7 @@
     "static/media/cp_inbound.png": "/static/media/cp_inbound.78433d486f56c4414ad5.png",
     "static/media/flywheel_model_re.png": "/static/media/flywheel_model_re.4072cddd802ee00165d4.png",
     "static/media/DMSans-VariableFont_opsz,wght.ttf": "/static/media/DMSans-VariableFont_opsz,wght.b230ddb7eabb4b25e123.ttf",
+    "static/media/flywheel_model_mo.png": "/static/media/flywheel_model_mo.e730871bd532bb0cd4db.png",
     "static/media/user_flow_bg.png": "/static/media/user_flow_bg.280411c40dbe045056a5.png",
     "static/media/cp_task.png": "/static/media/cp_task.bbbc4e3cd1a59d18440c.png",
     "static/media/material-icons-two-tone.woff2": "/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
@@ -87,12 +88,12 @@
     "static/media/app_package_obj2.png": "/static/media/app_package_obj2.3f0a925ab978b2e7030d.png",
     "static/media/app_package_obj1.png": "/static/media/app_package_obj1.7e86e62db6b93a80aaef.png",
     "index.html": "/index.html",
-    "main.6cbacebd.css.map": "/static/css/main.6cbacebd.css.map",
-    "main.cdbfad6e.js.map": "/static/js/main.cdbfad6e.js.map",
+    "main.099bcc7f.css.map": "/static/css/main.099bcc7f.css.map",
+    "main.45ff083b.js.map": "/static/js/main.45ff083b.js.map",
     "453.9e1efd20.chunk.js.map": "/static/js/453.9e1efd20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cbacebd.css",
-    "static/js/main.cdbfad6e.js"
+    "static/css/main.099bcc7f.css",
+    "static/js/main.45ff083b.js"
   ]
 }
