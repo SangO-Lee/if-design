@@ -1,7 +1,9 @@
 import objectImg1 from "assets/img/app_package_obj1.png";
 import objectImg2 from "assets/img/app_package_obj2.png";
-import teacherIcon1 from "assets/img/teacher_app1.png";
-import teacherIcon3 from "assets/img/teacher_app3.png";
+import teacherIcon4 from "assets/img/teacher_app4.png";
+import teacherIcon2 from "assets/img/teacher_app2.png";
+import traitImg1 from "assets/img/teachers_app/ta_trait1.png";
+import traitImg2 from "assets/img/teachers_app/ta_trait2.png";
 
 import ScrollProgress from "components/common/ScollProgress";
 import React, { useState } from "react";
@@ -68,37 +70,55 @@ function Section2() {
 
                     <div className="teacher-wrap">
                         <div className="item item1">
-                            <h3>
+                            <div className="txt-box">
+                                <h3>
+                                    <img
+                                        src={teacherIcon4}
+                                        alt="icon"
+                                        className="icon"
+                                    />
+                                    attendance management
+                                </h3>
+                                <p>
+                                    Instructors can check and record the number
+                                    of students and their attendance status for
+                                    each class. This functionality streamlines
+                                    attendance management, contributing to an
+                                    efficient learning environment.
+                                </p>
+                            </div>
+                            <div className="img-box">
                                 <img
-                                    src={teacherIcon3}
-                                    alt="icon"
-                                    className="icon"
+                                    src={traitImg1}
+                                    alt="screen"
+                                    className="trait-img"
                                 />
-                                Instructor's opinion
-                            </h3>
-                            <p>
-                                Enables educators to provide students with
-                                feedback on their learning progress and share
-                                information with parents regarding their child's
-                                academic achievements and learning attitudes.
-                            </p>
+                            </div>
                         </div>
                         <div className="item item2">
-                            <h3>
+                            <div className="txt-box">
+                                <h3>
+                                    <img
+                                        src={teacherIcon2}
+                                        alt="icon"
+                                        className="icon"
+                                    />
+                                    PErpormence Management
+                                </h3>
+                                <p>
+                                    Instructors can enter individual student
+                                    grades, monitor pre-study and review status,
+                                    and track weekly online assignment
+                                    submissions
+                                </p>
+                            </div>
+                            <div className="img-box">
                                 <img
-                                    src={teacherIcon1}
-                                    alt="icon"
-                                    className="icon"
+                                    src={traitImg2}
+                                    alt="screen"
+                                    className="trait-img"
                                 />
-                                Attendance Management
-                            </h3>
-                            <p>
-                                Instructors can check and record the number of
-                                students and their attendance status for each
-                                class. This functionality streamlines attendance
-                                management, contributing to an efficient
-                                learning environment.
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>

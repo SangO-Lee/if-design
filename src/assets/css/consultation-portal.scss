@@ -8,7 +8,7 @@
     }
     #section1 {
         padding: 130px 0;
-        background: url(../img/consultation_portal/cp_section1_bg.png) no-repeat center top / cover;
+        background: url(../img/consultation_portal/cp_section1_bg.png) no-repeat center bottom / cover;
 
         .section-title {
             @include heading1;
@@ -19,6 +19,7 @@
         }
     }
     #section2 {
+        aspect-ratio: initial;
         background: url(../img/consultation_portal/cp_section2_bg.png) no-repeat center top / cover;
 
         .container {
@@ -53,7 +54,7 @@
         }
     }
     #section4 {
-        aspect-ratio: 1920 / 1030;
+        // aspect-ratio: 1920 / 1030;
         background: url(../img/consultation_portal/cp_section4_bg.png) no-repeat center top / cover;
         .sub-title {
             margin-left: auto;
@@ -104,5 +105,8 @@
     #section7 {
         min-height: 0;
         padding: 0;
+        img {
+            width: 100%;
+        }
     }
 }

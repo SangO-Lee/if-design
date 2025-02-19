@@ -9,7 +9,7 @@ const menu = [
     {
         index: 2,
         id: "section2",
-        name: "Consultation Portal",
+        name: "Consultation AI Portal",
         visible: true,
         url: "/consultation-portal",
     },

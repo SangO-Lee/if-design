@@ -34,7 +34,7 @@ function Section1() {
                         information necessary for consultations.
                     </p>
                 </div>
-                <div class="container fluid">
+                <div className="container fluid">
                     <img
                         src={consultationImg}
                         alt="consultation portal"

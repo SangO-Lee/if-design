@@ -194,7 +194,7 @@ button {
         //section2
         #section2 {
             // padding: 0;
-            aspect-ratio: 1920 / 1080;
+            // aspect-ratio: 1920 / 1080;
             background: url("../img/consultation_portal_bg.png") no-repeat center bottom / cover;
             &.active {
                 .section-title,
@@ -786,7 +786,8 @@ button {
         //section7
         #section7 {
             padding: 0;
-            min-height: calc(260px + 100dvh);
+            height: calc(260px + 100dvh);
+            max-height: 1151px;
             overflow: hidden;
             background: url("../img/color_bg.png") no-repeat center / cover;
 
@@ -943,6 +944,9 @@ button {
             z-index: -1;
             padding: 0;
             aspect-ratio: 1920/1080;
+            img {
+                width: 100%;
+            }
         }
 
         //section9
