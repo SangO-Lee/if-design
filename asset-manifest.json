@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6cbacebd.css",
-    "main.js": "/static/js/main.375da0bf.js",
+    "main.js": "/static/js/main.cdbfad6e.js",
     "static/js/453.9e1efd20.chunk.js": "/static/js/453.9e1efd20.chunk.js",
     "static/media/overview_4x.png": "/static/media/overview_4x.38035c4343034612bdc2.png",
     "static/media/overview_2x.png": "/static/media/overview_2x.629ad1e90b51ac2b41b7.png",
@@ -48,8 +48,8 @@
     "static/media/material-icons-sharp.woff": "/static/media/material-icons-sharp.3a4004a46a653d4b2166.woff",
     "static/media/material-icons-outlined.woff2": "/static/media/material-icons-outlined.6f420cf17cc0d7676fad.woff2",
     "static/media/cp_section5_bg.png": "/static/media/cp_section5_bg.ac90c12e0f7634a1bdb4.png",
-    "static/media/teacher_app_screen2_2x.png": "/static/media/teacher_app_screen2_2x.936dfe5b7e76a94d1255.png",
     "static/media/teacher_app_screen3_2x.png": "/static/media/teacher_app_screen3_2x.c82415674e87929853da.png",
+    "static/media/teacher_app_screen2_2x.png": "/static/media/teacher_app_screen2_2x.b1964773f20b9d3f0c5c.png",
     "static/media/material-icons-sharp.woff2": "/static/media/material-icons-sharp.219aa9140e099e6c72ed.woff2",
     "static/media/user_flow.png": "/static/media/user_flow.86d09f09c5f06d77ef55.png",
     "static/media/material-icons.woff2": "/static/media/material-icons.0c35d18bf06992036b69.woff2",
@@ -88,11 +88,11 @@
     "static/media/app_package_obj1.png": "/static/media/app_package_obj1.7e86e62db6b93a80aaef.png",
     "index.html": "/index.html",
     "main.6cbacebd.css.map": "/static/css/main.6cbacebd.css.map",
-    "main.375da0bf.js.map": "/static/js/main.375da0bf.js.map",
+    "main.cdbfad6e.js.map": "/static/js/main.cdbfad6e.js.map",
     "453.9e1efd20.chunk.js.map": "/static/js/453.9e1efd20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cbacebd.css",
-    "static/js/main.375da0bf.js"
+    "static/js/main.cdbfad6e.js"
   ]
 }
