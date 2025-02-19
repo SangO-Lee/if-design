@@ -51,7 +51,8 @@ function Section3() {
                             <div className="item item1">
                                 <img src={packageImg1} alt="상담포털" />
                                 <h3 className="card-title">
-                                    Consultation AI Portal
+                                    Consultation <br className="visible-xs" />
+                                    AI Portal
                                 </h3>
                                 <div className="txt-box">
                                     <h3>Consultation AI Portal</h3>

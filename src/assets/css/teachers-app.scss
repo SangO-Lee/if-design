@@ -86,6 +86,7 @@
             }
             .txt-box {
                 width: 440px;
+                max-width: 100%;
                 padding-right: 40px;
                 h3 {
                     position: relative;
@@ -259,6 +260,99 @@
         padding: 0;
         img {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #main #teachers-app {
+        #section1 {
+            .main-visual {
+                padding-top: 100px;
+                aspect-ratio: initial;
+                background-color: rgba(255, 255, 255, 0.8);
+                background-blend-mode: screen;
+                background-position: center 0 top 50%;
+
+                .container {
+                    position: static;
+                    transform: initial;
+                }
+
+                .mockup {
+                    position: absolute;
+                    display: block;
+                    width: 96dvw;
+                    bottom: 5%;
+                    right: auto;
+                    left: auto;
+                }
+            }
+        }
+        #section2 {
+            .teacher-wrap {
+                .item {
+                    padding: 28px;
+                    flex-flow: column;
+                    gap: 28px;
+
+                    .txt-box {
+                        padding: 0;
+                        h3 {
+                            overflow: initial;
+                            line-height: 1.2;
+                            height: auto;
+                        }
+                        .icon {
+                            position: relative;
+                            top: -3px;
+                        }
+                    }
+                }
+            }
+        }
+        #section3 {
+            .teacher-wrap {
+                flex-flow: column;
+                .item {
+                    padding: 28px;
+                    aspect-ratio: 5 / 8;
+
+                    .screen {
+                        bottom: -45%;
+                    }
+                    &.item2 {
+                        justify-content: flex-start;
+                        .screen {
+                            top: auto;
+                            bottom: -45%;
+                        }
+                    }
+                    h3 {
+                        overflow: initial;
+                        height: fit-content;
+                        line-height: 1.2;
+                    }
+                    .icon {
+                        position: relative;
+                        top: -3px;
+                    }
+                }
+            }
+        }
+        #section4 {
+            .ta-component-wrap {
+                gap: 8px;
+                &::before {
+                    width: 50dvw;
+                }
+            }
+        }
+        #section5 {
+            img {
+                height: 100dvh;
+                object-fit: cover;
+            }
         }
     }
 }

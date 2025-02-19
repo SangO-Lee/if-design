@@ -50,6 +50,7 @@
                 position: absolute;
                 right: -6%;
                 bottom: 0;
+                max-width: 20dvw;
             }
         }
     }
@@ -108,6 +109,40 @@
         padding: 0;
         img {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #main #consultation-portal {
+        #section1 {
+            padding: 100px 0 80px;
+        }
+        #section2 {
+            .container {
+                .txt-box {
+                    position: static;
+                }
+            }
+        }
+        #section5 {
+            .container {
+                .txt-box {
+                    position: static;
+                    width: 100%;
+                }
+            }
+        }
+        #section6 {
+            .section-title img {
+                margin-left: 0;
+            }
+        }
+        #section7 {
+            img {
+                height: 50dvh;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ function Section5() {
                     <div className="txt-box">
                         <h2 className="section-title ">
                             User-Centered Task Support
-                            <br /> Features
+                            <br className="hidden-xs" /> Features
                         </h2>
                         <p className="sub-title">
                             Through the Consultation AI Portal, counselors can

@@ -10,6 +10,7 @@ function Nav() {
     const navigate = useNavigate();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
+    const [isMenuToggle, setIsMenuToggle] = useState(false);
     const [logoSrc, setLogoSrc] = useState(logoImg);
 
     // 원하는 순서로 재정렬된 메뉴 항목
@@ -32,6 +33,12 @@ function Nav() {
 
     const onMoveTo = (targetUrl) => {
         navigate(targetUrl);
+        setIsMenuToggle(false);
+    };
+
+    //모바일 토글 메뉴 버튼
+    const onToggle = () => {
+        setIsMenuToggle(!isMenuToggle);
     };
 
     // useEffect(() => {
@@ -70,7 +77,11 @@ function Nav() {
                             <img src={logoSrc} alt="creverse" />
                         </a>
                     </h1>
-                    <ul id="menu">
+                    <ul
+                        id="menu"
+                        className={` ${isMenuToggle ? "on" : ""}
+                        `.trim()}
+                    >
                         {customOrderMenu.map((menu, index) => (
                             <li
                                 key={index}
@@ -86,7 +97,31 @@ function Nav() {
                                 </button>
                             </li>
                         ))}
+
+                        <li className="close-menu ">
+                            <button
+                                id="close-btn"
+                                onClick={() => {
+                                    onToggle();
+                                }}
+                            >
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
                     </ul>
+                    <button
+                        id="toggle-btn"
+                        className={`visible-xs ${isMenuToggle ? "on" : ""} 
+                        }`.trim()}
+                        onClick={() => {
+                            onToggle();
+                        }}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
         </>
