@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8038fe24.css",
-    "main.js": "/static/js/main.0ba4d2b9.js",
+    "main.css": "/static/css/main.15b19b00.css",
+    "main.js": "/static/js/main.45dfd629.js",
     "static/js/453.9e1efd20.chunk.js": "/static/js/453.9e1efd20.chunk.js",
     "static/media/PretendardVariable.woff2": "/static/media/PretendardVariable.2bc582461caf4e05b51d.woff2",
     "static/media/overview.png": "/static/media/overview.bebecad39ff42c1795c3.png",
@@ -42,8 +42,6 @@
     "static/media/material-icons-sharp.woff": "/static/media/material-icons-sharp.3a4004a46a653d4b2166.woff",
     "static/media/material-icons-outlined.woff2": "/static/media/material-icons-outlined.6f420cf17cc0d7676fad.woff2",
     "static/media/cp_section5_bg.png": "/static/media/cp_section5_bg.ac90c12e0f7634a1bdb4.png",
-    "static/media/ta_trait_bg2_2x.png": "/static/media/ta_trait_bg2_2x.d261fbd90c461184c67d.png",
-    "static/media/ta_trait_bg1_2x.png": "/static/media/ta_trait_bg1_2x.cd19b0cd723afed349bf.png",
     "static/media/teacher_app_screen2_2x.png": "/static/media/teacher_app_screen2_2x.936dfe5b7e76a94d1255.png",
     "static/media/teacher_app_screen3_2x.png": "/static/media/teacher_app_screen3_2x.c82415674e87929853da.png",
     "static/media/material-icons-sharp.woff2": "/static/media/material-icons-sharp.219aa9140e099e6c72ed.woff2",
@@ -66,12 +64,16 @@
     "static/media/ta_component1.png": "/static/media/ta_component1.81aa1fde51fbc1fc5fcb.png",
     "static/media/ta_component2.png": "/static/media/ta_component2.6b5157edcc0ae81f1e98.png",
     "static/media/graphic_system.png": "/static/media/graphic_system.083081bfe4dfd9320f2e.png",
+    "static/media/ta_trait2.png": "/static/media/ta_trait2.637e91b135f72cd66f2e.png",
     "static/media/ta_component3.png": "/static/media/ta_component3.a4ab2b4d494c684b037b.png",
     "static/media/flywheel_mini.png": "/static/media/flywheel_mini.354613888fc62c7ab3e6.png",
     "static/media/tab_sample2.jpg": "/static/media/tab_sample2.24add37afb85b8bf2c25.jpg",
+    "static/media/ta_trait1.png": "/static/media/ta_trait1.da067d2b23f37074f70a.png",
     "static/media/teacher_app_bg.png": "/static/media/teacher_app_bg.9330dee49bbb08276986.png",
+    "static/media/ta_trait_bg1_2x.png": "/static/media/ta_trait_bg1_2x.fb492e7c95fc7b471a3c.png",
     "static/media/teacher_app_bg2.png": "/static/media/teacher_app_bg2.e43cda636b9becb88932.png",
     "static/media/color_sample1.png": "/static/media/color_sample1.9cf0df2a87f1206ca1b2.png",
+    "static/media/ta_trait_bg2_2x.png": "/static/media/ta_trait_bg2_2x.31b1bf9f80fda5b629a4.png",
     "static/media/color_sample2.png": "/static/media/color_sample2.8db2364967b00fc55975.png",
     "static/media/color_sample3.png": "/static/media/color_sample3.bbc0bb9117aa21a4311b.png",
     "static/media/app_package_bg.png": "/static/media/app_package_bg.68dffae7b9f28e13bcff.png",
@@ -79,12 +81,12 @@
     "static/media/app_package_obj2.png": "/static/media/app_package_obj2.3f0a925ab978b2e7030d.png",
     "static/media/app_package_obj1.png": "/static/media/app_package_obj1.7e86e62db6b93a80aaef.png",
     "index.html": "/index.html",
-    "main.8038fe24.css.map": "/static/css/main.8038fe24.css.map",
-    "main.0ba4d2b9.js.map": "/static/js/main.0ba4d2b9.js.map",
+    "main.15b19b00.css.map": "/static/css/main.15b19b00.css.map",
+    "main.45dfd629.js.map": "/static/js/main.45dfd629.js.map",
     "453.9e1efd20.chunk.js.map": "/static/js/453.9e1efd20.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8038fe24.css",
-    "static/js/main.0ba4d2b9.js"
+    "static/css/main.15b19b00.css",
+    "static/js/main.45dfd629.js"
   ]
 }
