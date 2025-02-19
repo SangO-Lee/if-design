@@ -3,16 +3,24 @@ import Slider2 from "components/common/Slider2";
 import React, { useState } from "react";
 import slideImg1 from "assets/img/overview.png";
 import slideImg2 from "assets/img/overview2.png";
+import slideImgLarge1 from "assets/img/overview_2x.png";
+import slideImgLarge2 from "assets/img/overview2_2x.png";
+import slideImgExtraLarge1 from "assets/img/overview_4x.png";
+import slideImgExtraLarge2 from "assets/img/overview2_4x.png";
 
 const SLIDES = [
     {
         index: "1",
         imgSrc: slideImg1,
+        imgSrcLarge: slideImgLarge1,
+        imgSrcExtraLarge: slideImgExtraLarge1,
         imgAlt: "overview1",
     },
     {
         index: "2",
         imgSrc: slideImg2,
+        imgSrcLarge: slideImgLarge2,
+        imgSrcExtraLarge: slideImgExtraLarge2,
         imgAlt: "overview2",
     },
 ];
