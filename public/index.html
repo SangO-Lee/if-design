@@ -4,7 +4,21 @@
         <meta charset="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-FPSRHMY0NH"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-FPSRHMY0NH");
+        </script>
+        <meta name="theme-color" content="#C3DFEC" />
         <meta
             name="description"
             content="Web site created using create-react-app"
@@ -42,6 +56,7 @@
             })(window.location);
         </script>
     </head>
+
     <body id="body-layout">
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
