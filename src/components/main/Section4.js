@@ -1,5 +1,6 @@
 import menu from "assets/data/menu";
 import flywheelImg from "assets/img/flywheel_model_re.png";
+import flywheelImgMo from "assets/img/flywheel_model_mo.png";
 import ScrollProgress from "components/common/ScollProgress";
 import React, { useState } from "react";
 
@@ -39,9 +40,9 @@ function Section4() {
                         academy business stakeholders, service providers, and
                         beneficiaries all thrive together.
                     </p>
-
+                    {/* pc flywheel */}
                     <div
-                        className={`flywheel-wrap  ${
+                        className={`flywheel-wrap hidden-xs ${
                             progress > 0.2 ? "active" : ""
                         }`}
                     >
@@ -76,8 +77,9 @@ function Section4() {
                         </div>
                         <div className={`txt-box box1 type1 `}>
                             <h3>
-                                Integrated Academy AI Management Service USER
-                                ExPERIENCE
+                                Integrated Academy <br />
+                                AI Management Service <br />
+                                USER ExPERIENCE
                             </h3>
                             <p>
                                 Maintain consistent and high-quality standards
@@ -110,6 +112,27 @@ function Section4() {
                                 enhancing work efficiency and service quality
                             </p>
                         </div>
+                    </div>
+                    {/* mobile flywheel */}
+                    <div
+                        className={`flywheel-wrap visible-xs ${
+                            progress > 0.2 ? "active" : ""
+                        }`}
+                    >
+                        <div className="txt-box img-title active">
+                            <h3>Flywheel model</h3>
+                            <p>
+                                The flywheel effect means that a business gains
+                                momentum from the cumulative impact of small
+                                achievements, driving it forward and eventually
+                                resulting in sustainable growth.
+                            </p>
+                        </div>
+                        <img
+                            src={flywheelImgMo}
+                            alt="크레버스 플라이휠"
+                            className="flywheel-img center-block"
+                        />
                     </div>
                 </div>
             </section>

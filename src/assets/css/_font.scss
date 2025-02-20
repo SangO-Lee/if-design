@@ -1,11 +1,14 @@
 //font
 
 @mixin hero {
-    font-size: 72px;
+    font-size: 64px;
     letter-spacing: -0.02em;
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: 900;
+    @media (max-width: 767px) {
+        font-size: 34px;
+    }
 }
 @mixin heading1 {
     font-size: 32px;
@@ -13,6 +16,9 @@
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: 700;
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
 }
 @mixin heading2 {
     font-size: 24px;
@@ -55,6 +61,12 @@
         --text1,
         linear-gradient(98deg, #5eb2ba -12.28%, #3f696a 17.42%, #4e4e4e 47.92%, #5a7576 83.05%, #8ad6da 108.13%)
     );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin ai-gradient {
+    background: var(--text1, linear-gradient(270deg, #b1bdff -100%, #6348ff 120%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

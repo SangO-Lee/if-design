@@ -1,5 +1,5 @@
 import menu from "assets/data/menu";
-import mockupImg from "assets/img/main_visual_mockup.png";
+import mockupImg from "assets/img/main_visual_mockup_old.png";
 import { useEffect, useState } from "react";
 
 function Section1() {
@@ -27,6 +27,14 @@ function Section1() {
                                 Integrated Academy AI
                             </span>
                             <span className="line l3">Management Service</span>
+                        </p>
+                        <p className="sub-text">
+                            As the era of artificial intelligence (AI) unfolds,
+                            we have developed this service to enhance the
+                            overall quality of academy management by
+                            transitioning traditional offline-focused operations
+                            to a digital platform and integrating AI
+                            technologies.
                         </p>
                     </div>
                 </div>

@@ -30,7 +30,8 @@ function Section5() {
                     <div className="title-box">
                         <h2 className="section-title">
                             <small>teacher app</small>
-                            Teacher’s Assistant App Key Features
+                            Teacher’s Assistant App <br className="hidden-xs" />
+                            Key Features
                         </h2>
                         <p className="sub-title">
                             Teacher’s Assistant App is designed to assist

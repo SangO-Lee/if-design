@@ -3,12 +3,15 @@ import logoImgWhite from "assets/img/logo_white.png";
 import useScrollPosition from "hook/useScrollPosition";
 import { useEffect, useState } from "react";
 import menu from "assets/data/menu";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
     const scrollPosition = useScrollPosition();
+    const navigate = useNavigate();
     const [isNavActive, setIsNavActive] = useState(false);
     const [isNavScrolling, setIsNavScrolling] = useState(false);
-    const [logoSrc, setLogoSrc] = useState(logoImgWhite);
+    const [isMenuToggle, setIsMenuToggle] = useState(false);
+    const [logoSrc, setLogoSrc] = useState(logoImg);
 
     // 원하는 순서로 재정렬된 메뉴 항목
     const customOrderMenu = [
@@ -21,27 +24,38 @@ function Nav() {
         menu[7], // Overview
     ];
 
+    //클릭시 해당 위치로 스크롤 이동되는 기능
     const onScrollMenu = (target) => {
         const targetId = target;
         const targetOffset = document.querySelector(`#${targetId}`).offsetTop;
         window.scrollTo(0, targetOffset);
     };
 
-    useEffect(() => {
-        if (scrollPosition !== 0) {
-            setLogoSrc(logoImg);
-        } else {
-            setLogoSrc(logoImgWhite);
-        }
-    }, []);
+    const onMoveTo = (targetUrl) => {
+        navigate(targetUrl);
+        setIsMenuToggle(false);
+    };
+
+    //모바일 토글 메뉴 버튼
+    const onToggle = () => {
+        setIsMenuToggle(!isMenuToggle);
+    };
+
+    // useEffect(() => {
+    //     if (scrollPosition !== 0) {
+    //         setLogoSrc(logoImg);
+    //     } else {
+    //         setLogoSrc(logoImgWhite);
+    //     }
+    // }, []);
 
     useEffect(() => {
         if (scrollPosition !== 0) {
             setIsNavScrolling(true);
-            setLogoSrc(logoImg);
+            // setLogoSrc(logoImg);
         } else {
             setIsNavScrolling(false);
-            setLogoSrc(logoImgWhite);
+            // setLogoSrc(logoImgWhite);
         }
     }, [scrollPosition]);
 
@@ -63,7 +77,11 @@ function Nav() {
                             <img src={logoSrc} alt="creverse" />
                         </a>
                     </h1>
-                    <ul id="menu">
+                    <ul
+                        id="menu"
+                        className={` ${isMenuToggle ? "on" : ""}
+                        `.trim()}
+                    >
                         {customOrderMenu.map((menu, index) => (
                             <li
                                 key={index}
@@ -72,14 +90,38 @@ function Nav() {
                             >
                                 <button
                                     onClick={() => {
-                                        onScrollMenu(menu.id);
+                                        onMoveTo(menu.url);
                                     }}
                                 >
                                     {menu.name}
                                 </button>
                             </li>
                         ))}
+
+                        <li className="close-menu ">
+                            <button
+                                id="close-btn"
+                                onClick={() => {
+                                    onToggle();
+                                }}
+                            >
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
                     </ul>
+                    <button
+                        id="toggle-btn"
+                        className={`visible-xs ${isMenuToggle ? "on" : ""} 
+                        }`.trim()}
+                        onClick={() => {
+                            onToggle();
+                        }}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
         </>

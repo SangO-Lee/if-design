@@ -11,7 +11,7 @@
         }
     }
     .container {
-        width: 1440px;
+        width: 1320px;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -20,6 +20,9 @@
 
         &.fluid {
             width: 100%;
+        }
+        &.narrow {
+            width: 1200px;
         }
     }
 }

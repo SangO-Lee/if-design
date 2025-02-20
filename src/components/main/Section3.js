@@ -50,6 +50,10 @@ function Section3() {
                         <div className="col col-left">
                             <div className="item item1">
                                 <img src={packageImg1} alt="상담포털" />
+                                <h3 className="card-title">
+                                    Consultation <br className="visible-xs" />
+                                    AI Portal
+                                </h3>
                                 <div className="txt-box">
                                     <h3>Consultation AI Portal</h3>
                                     <p>
@@ -66,8 +70,15 @@ function Section3() {
                         <div className="col col-center">
                             <div className="item item2">
                                 <img src={packageImg2} alt="강사앱" />
+                                <h3 className="card-title">
+                                    Teacher’s <br />
+                                    Assistant App
+                                </h3>
                                 <div className="txt-box">
-                                    <h3>Teacher’s Assistant App</h3>
+                                    <h3>
+                                        Teacher’s <br />
+                                        Assistant App
+                                    </h3>
                                     <p>
                                         Designed for teachers and counselors,
                                         this app allows for the registration and
@@ -84,6 +95,7 @@ function Section3() {
                         <div className="col col-right">
                             <div className="item item3">
                                 <img src={packageImg3} alt="관리자앱" />
+                                <h3 className="card-title">MANAGER App</h3>
                                 <div className="txt-box">
                                     <h3>MANAGER App</h3>
                                     <p>
@@ -97,6 +109,10 @@ function Section3() {
                             </div>
                             <div className="item item4">
                                 <img src={packageImg4} alt="셔틀버스앱" />
+                                <h3 className="card-title">
+                                    Shuttle Bus <br />
+                                    Management App
+                                </h3>
                                 <div className="txt-box">
                                     <h3>
                                         Shuttle Bus <br />

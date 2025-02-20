@@ -62,16 +62,31 @@ const Slider2 = ({ intervalTime = 6000, slides }) => {
 
             {/* 이미지 표시 영역 */}
             <div className="img-box">
-                {slides.map((slide, index) => (
-                    <img
-                        key={slide.index}
-                        className={`img img${index + 1} ${
-                            index === currentIndex ? "active" : ""
-                        }`}
-                        src={slide.imgSrc}
-                        alt={slide.imgAlt}
-                    />
-                ))}
+                <picture>
+                    {slides.map((slide, index) => (
+                        <React.Fragment key={slide.index}>
+                            {slide.imgSrcExtraLarge && (
+                                <source
+                                    srcSet={slide.imgSrcExtraLarge}
+                                    media="(min-width: 3840px)"
+                                />
+                            )}
+                            {slide.imgSrcLarge && (
+                                <source
+                                    srcSet={slide.imgSrcLarge}
+                                    media="(min-width: 2560px)"
+                                />
+                            )}
+                            <img
+                                className={`img img${index + 1} ${
+                                    index === currentIndex ? "active" : ""
+                                }`}
+                                src={slide.imgSrc}
+                                alt={slide.imgAlt}
+                            />
+                        </React.Fragment>
+                    ))}
+                </picture>
             </div>
 
             {/* 재생 / 일시정지 컨트롤 */}
